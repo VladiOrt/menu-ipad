@@ -7,7 +7,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'GreyclifReg';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("GreyclifReg"),
+    url("./components/utils/fonts/Demo_Fonts\ 3/greycliffcf-medium.otf") format("otf");
+   
+}
+
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Avenir"),
+    url("./components/utils/fonts/Demo_Fonts\ 3/AvenirNextLTPro-Regular.otf") format("otf");
+   
+}
+
+
+
+
+
+
+
+
+
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: GreyclifReg, Avenir , source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

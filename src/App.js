@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 
-function App() {
+
+import './App.scss'
+
+import Home from './components/views/home';
+
+
+
+const LoadingIndicator = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Loading'>
+      {/* Aquí puedes usar un icono animado, un spinner o simplemente un mensaje */}
     </div>
   );
-}
+};
+
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simula una carga de 2 segundos (puedes ajustar el tiempo según tus necesidades)
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  return (
+    <div className='containerGeneral'>
+      {loading ? <LoadingIndicator /> : <Home />}
+    </div>
+  );
+};
 
 export default App;

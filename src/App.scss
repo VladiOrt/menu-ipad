@@ -1,0 +1,45 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  overflow: hidden;
+}
+
+
+.Loading{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url('../src/components/utils/img/loading/img1.png');
+  background-size: 105vw;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  animation-name: fadeOut; // Aplicamos la animación "fadeOut"
+  animation-duration: 2s; // Duración de la animación (en segundos)
+  animation-timing-function: ease-out; // Función de temporización (opcional)
+  animation-fill-mode: forwards; // Mantenemos el estado final de la animación
+
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; // La opacidad inicial del elemento
+  }
+  80%{
+    opacity: 1; // La opacidad inicial del elemento
+  }
+  100% {
+    opacity: 0; // La opacidad final del elemento (completamente transparente)
+  }
+}
+
+
+.containerGeneral{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

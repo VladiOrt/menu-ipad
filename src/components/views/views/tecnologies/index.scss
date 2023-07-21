@@ -1,0 +1,123 @@
+
+
+.containerTechnologiesContainer{
+    min-width: 90vw;
+    min-height: 100vh;
+  
+
+    display: flex;
+    flex-direction: column;
+    
+
+
+    .contentTechnologies{
+        min-width: 90vw;
+        min-height:95vh;
+        max-width: 90vw;
+        max-height: 95vh;
+        padding-top: 5vh;
+
+        background-image: url('../../../utils/img/tecnologies/background.png');
+        background-size: cover;
+    
+        label{
+            margin-left: 5vw;
+            font-size: 3rem;
+            min-height: 5vh;
+            color: #A9625E;
+            font-family: GreyclifReg;
+        }
+        p{
+            margin-top: 3vh;
+            margin-left: 5vw;
+            min-height: 5vh;
+            max-width: 52vw;
+            font-size: 0.9rem;
+            color: #3C3C3C;
+            font-family: Avenir;
+        }
+        nav{
+            margin-top: 3vh;
+            ul{
+                min-width:40vw;
+                max-width:40vw;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                min-height: 70vh;                
+                li{
+                    border: none;
+                    background-color: #FFF;
+                    max-width: 25vw;
+                    margin-left: 5vw;
+                    min-width: 25vw;
+                    min-height:  6vh;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    div{
+                        margin-left: 10px;
+                        min-width: 36px;                                                                
+                        max-width: 36px;
+                        min-height: 36px;
+                        max-height: 36px;
+                        background-image: url('../../../utils//img/tecnologies/Circle.png');
+                        background-position: center;
+                        background-size: 30px;
+                        background-repeat: no-repeat;
+                    }
+                    label{
+                        margin-left: 10px;
+                        font-size: 1.2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #A9625E;
+                        font-style: oblique;
+                        font-family: Avenir;
+                    }
+                }
+            }    
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesReskin{
+        min-width: 90vw;
+        min-height: 100vh;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+
+        background-image: url('../../../utils//img/tecnologies/reskin/background.png');
+        background-position: right;
+        background-size: 42vw;
+        background-repeat: no-repeat;
+        background-position-x: 40vw;
+
+    }
+}
+
+
+
+
+
+
