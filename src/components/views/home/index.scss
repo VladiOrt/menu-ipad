@@ -7,7 +7,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size:  101vw;
-    background-position-y: -10vh;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -21,7 +21,7 @@
             .containerButtons{
                 min-width: 80vw;
                 min-height: 15vh;
-                margin-bottom: 21vh;
+                margin-bottom: 16vh;
                 display: flex;
                 justify-content: space-between;
                 a{
@@ -69,6 +69,16 @@
             background-repeat: no-repeat;
             background-size: 15vw;
             background-position-y: -20vh;
+
+
+            .containerButtonVacio{
+                min-width: 15vw;
+                min-height: 15vh;
+                position: absolute;
+                margin-bottom: 75vh;
+                z-index: 5;
+            }
+
             .containerButtons{
                 min-width: 15vw;
                 min-height: 58vh;

@@ -1,0 +1,1275 @@
+
+
+.containerBodilyContainer{
+    min-width: 90vw;
+    min-height: 100vh;
+  
+
+    display: flex;
+    flex-direction: column;
+    
+    min-width: 85vw;
+    max-width: 85vw;
+    overflow-x: hidden;
+
+    .contentTechnologies{
+        min-width: 90vw;
+        min-height:95vh;
+        max-width: 90vw;
+        max-height: 95vh;
+        padding-top: 5vh;
+
+        background-image: url('../../../utils/img/bodily/background.png');
+        background-size: cover;
+        label{
+            margin-left: 5vw;
+            font-size: 3rem;
+            min-height: 5vh;
+            color: #6660AF;
+            font-weight: 400;
+            font-family: greycliff-cf;
+        }
+        p{
+            margin-top: 3vh;
+            margin-left: 5vw;
+            min-height: 5vh;
+            max-width: 52vw;
+            font-size: 0.9rem;
+            color: #3C3C3C;
+            font-family: Avenir;
+            font-style: oblique;
+        }
+        nav{
+            margin-top: 3vh;
+            ul{
+                min-width:40vw;
+                max-width:40vw;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                min-height: 65vh;                
+                li{
+                    border: none;
+                    background-color: #FFF;
+                    max-width: 25vw;
+                    margin-left: 5vw;
+                    min-width: 25vw;
+                    min-height:  6vh;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    div{
+                        margin-left: 10px;
+                        min-width: 36px;                                                                
+                        max-width: 36px;
+                        min-height: 36px;
+                        max-height: 36px;
+                        background-image: url('../../../utils//img/bodily/circle.png');
+                        background-position: center;
+                        background-size: 30px;
+                        background-repeat: no-repeat;
+                    }
+                    label{
+                        margin-left: 10px;
+                        font-size: 1.2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #6660AF;
+                        font-style: oblique;
+                        font-family: Avenir;
+                    }
+                }
+            }    
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .contentBodilyFisioterapia{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/fisioterapia/background.png');
+        background-position: right;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        background-position-y: 15vh;
+        background-position-x: 35vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 220px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: row;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+            .Score{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                label{
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 28vw;
+            margin-top: 5vh;
+            padding-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+            background-image: url('../../../utils/img/bodily/fisioterapia/FondoLinea.png');
+            background-repeat: no-repeat;
+            
+            background-size: 2.5vw;
+       }                   
+    }
+
+
+
+
+
+
+
+
+    .contentBodilyRelax{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils/img/bodily/relax/background.png');
+        background-position: right;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        background-position-y: 15vh;
+        background-position-x: 35vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 220px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 30vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 0vh;
+           padding-left: 5vw;
+           padding-top: 5vh;
+           max-width: 30vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
+           background-repeat: no-repeat;
+           background-position: left;
+
+           background-size: 2.55vw;
+           background-position-x: 0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentBodilyDeep{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils/img/bodily/Deep/Background.png');
+        background-position: right;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        background-position-y: 15vh;
+        background-position-x: 35vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 300px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 30vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 0vh;
+           padding-left: 5vw;
+           padding-top: 5vh;
+           max-width: 30vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
+           background-repeat: no-repeat;
+           background-position: left;
+
+           background-size: 2.55vw;
+           background-position-x: 0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesHotStone{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/HotStone/background.png');
+        background-position: right;
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-y: 8vh;
+        background-position-x: 30vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 280px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 3vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 25vw;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 3vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           max-width: 25vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/HotStone/FondoLinea.png');
+           background-size: 2.5vw;
+           background-position-x: -0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentBudilyCupping{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/cupping/background.png');
+        background-position: right;
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-y: 8vh;
+        background-position-x: 32vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 3vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 28vw;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 3vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           max-width: 28vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/cupping/FondoLinea.png');
+           background-size: 2.5vw;
+           background-position-x: 0vw;
+           background-position-y: 1vh;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentBodilyLimphatic{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/limphatic/background.png');
+        background-position: right;
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-y: 8vh;
+        background-position-x: 32vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 25vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 3vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           max-width: 25vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/limphatic/FondoLinea.png');
+           background-size: 2.5vw;
+           background-position-x: 0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentBodilyCold{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/cold/background.png');
+        background-position: right;
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-y: 8vh;
+        background-position-x: 32vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 27vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           max-width: 27vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/cold/FondoLinea.png');
+           background-size: 2.5vw;
+           background-position-x: 0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentBodilyRemodeling{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/bodily/remodeling/background.png');
+        background-position: right;
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-y: 8vh;
+        background-position-x: 32vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 27vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           max-width: 27vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/bodily/cold/FondoLinea.png');
+           background-size: 2.5vw;
+           background-position-x: 0vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

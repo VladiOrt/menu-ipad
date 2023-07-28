@@ -9,7 +9,12 @@
     flex-direction: column;
     
 
+    min-width: 85vw;
+    max-width: 85vw;
+    overflow-x: hidden;
 
+
+    
     .contentTechnologies{
         min-width: 90vw;
         min-height:95vh;
@@ -19,13 +24,13 @@
 
         background-image: url('../../../utils/img/tecnologies/background.png');
         background-size: cover;
-    
         label{
             margin-left: 5vw;
             font-size: 3rem;
             min-height: 5vh;
             color: #A9625E;
-            font-family: GreyclifReg;
+            font-weight: 400;
+            font-family: greycliff-cf;
         }
         p{
             margin-top: 3vh;
@@ -35,6 +40,7 @@
             font-size: 0.9rem;
             color: #3C3C3C;
             font-family: Avenir;
+            font-style: oblique;
         }
         nav{
             margin-top: 3vh;
@@ -98,22 +104,1372 @@
     .contentTechnologiesReskin{
         min-width: 90vw;
         min-height: 100vh;
-
-
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-
-
-
         background-image: url('../../../utils//img/tecnologies/reskin/background.png');
         background-position: right;
         background-size: 42vw;
         background-repeat: no-repeat;
-        background-position-x: 40vw;
-
+        background-position-x: 42vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: row;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+            .Score{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                label{
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 37vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 37vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/fondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
     }
+
+
+
+
+
+
+
+
+    .contentTechnologiesSkinGlow{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/skinGlow/back.png');
+        background-position: right;
+        background-size: 60vw;
+        background-repeat: no-repeat;
+        background-position-y: 7vh;
+        background-position-x: 24vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 37vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 35vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/fondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesPeelings{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        
+           
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesSkinRenew{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/SkinRenew/background.png');
+        background-position: right;
+        background-size: 95vw;
+        background-repeat: no-repeat;
+        background-position-y: -9vh;
+        background-position-x: -2vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 30vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 3vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 32vw;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 3vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 34.2vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesDiamondCorporal{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/diamondCorporal/background.png');
+        background-position: right;
+        background-size: 80vw;
+        background-repeat: no-repeat;
+        background-position-y: 0vh;
+        background-position-x: 5vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 3vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 28vw;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 3vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 28vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesDiamondFacial{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/diamondFacial/background.png');
+        background-position: right;
+        background-size: 80vw;
+        background-repeat: no-repeat;
+        background-position-y: -1vh;
+        background-position-x: 10vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 38vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 32vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesResurfacing{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/Resurfacing/background.png');
+        background-position: right;
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-position-y: 5vh;
+        background-position-x: 10vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 30vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 32vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesBegining{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/begining/background.png');
+        background-position: right;
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-position-y: 12vh;
+        background-position-x: 20vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 50vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+                max-width: 150px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #CBAC45;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 30vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           max-width: 32vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesUltralift{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/ultralift/background.png');
+        background-position: right;
+        background-size: 70vw;
+        background-repeat: no-repeat;
+        background-position-y: 3vh;
+        background-position-x: 38vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 38vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 250px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 35vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           min-width: 40vw;    
+           max-width: 40vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/ultralift/FondoLinea.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contentTechnologiesDermapen{
+        min-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../utils//img/tecnologies/dermapen/background.png');
+        background-position: right;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-position-y: -5vh;
+        background-position-x: 15vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 38vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 180px;
+            }
+        }
+       .containerScores{
+           display: flex;
+           flex-direction: column;
+           min-width: 30vw;
+           margin-top: 5vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 35vw;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+       .containerDescriptions{
+           margin-top: 5vh;
+           padding-left: 5vw;
+           padding-top: 6vh;
+           min-width: 40vw;    
+           max-width: 40vw;        
+           list-style: none;
+           background-image: url('../../../utils/img/tecnologies/ultralift/FondoLinea.png');
+           background-size: 35vw;
+           background-position-x: -2vw;
+           background-repeat: no-repeat;
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                    div{
+                        min-width: 6px;
+                        min-height: 6px;
+                        max-width: 6px;
+                        max-height: 6px;
+                        border-radius: 3px;
+                        background-color: #7E7C7C;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+               }
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 

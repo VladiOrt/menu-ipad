@@ -27,16 +27,15 @@ const Home = () => {
 
     function handleMenu(id){
 
+        if(id==0){
+            console.log("Se activa")
+            setFondo('')
+            setVista(0)
+        }else{
+            setFondo('Activo')
+            setVista(id)
+        }
 
-
-
-      
-            
-
-
-   
-        setFondo('Activo')
-        setVista(id)
     }
 
 
@@ -49,6 +48,7 @@ const Home = () => {
             
             <div className="containerContentHome">
                 <div className="containerContentNav">
+                    <div className="containerButtonVacio" onClick={()=>handleMenu(0)}></div>
                     <div className="containerButtons">
                         <a onClick={()=>handleMenu(1)}>
                             <img src={Img1} />                        

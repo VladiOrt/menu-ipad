@@ -1,0 +1,350 @@
+
+
+.containerPeelings{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back0.png');
+        background-position: right;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        background-position-y: -0vh;
+        background-position-x: 40vw;
+        .hederButtons{
+            margin-top: 5vh;
+            margin-left: 5vw;
+            min-width: 15vw;
+            display: flex;
+            justify-content: space-between;            
+            img{
+                max-width: 40px;
+            }            
+        }
+        .containerIcons{
+            min-width: 28vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                max-width: 100px;
+            }
+        }
+       .containerScores{
+          
+           display: flex;
+           flex-direction: column;
+           min-width: 28vw;
+           margin-top: 2vh;
+           margin-left: 5vw;
+           
+            .Score{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                label{
+                    color: #707070;
+                    font-size: 1.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    .price{
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #A9625E;
+                        font-family: greycliff-cf;
+                        font-weight: 500;
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .stars{
+                        margin-left: 10px;
+                        img{
+                            max-width: 25px;
+                        }
+                    }
+                    .time{
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        font-family: Avenir;
+                        color: #70706F;
+                        font-size: 1.2rem;
+                        font-style: oblique;
+                    }
+                }
+            }
+       }  
+       .containerParagraph{
+            max-width: 34vw;
+            margin-top: 2vh;
+            margin-left: 5vw;
+            color: #3C3C3C;
+            font-size: 1rem;
+            font-family: Avenir;
+       }       
+
+
+
+       .imageContainerBackground{
+        background-image: url('../../../../utils/img/tecnologies/peelings/backx.png');
+        background-size: 50vw;
+        background-position-y: 0vh;
+        background-repeat: no-repeat;
+        min-width: 50vw;
+        min-height: 90vh;
+        margin-left: 35vw;
+        position: absolute;
+        z-index: -1;
+
+       }
+
+
+
+       .containerDescriptions{
+           margin-top: 2vh;
+           padding-left: 5vw;
+           padding-top: 0vh;
+           min-width: 40vw;    
+           max-width: 40vw;        
+           list-style: none;
+        
+           color: #7E7C7C;
+           ul{
+               list-style: none;
+               color: #7E7C7C;
+               li{
+                   margin-top: 5px;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: center;
+                    div{
+                        min-width: 35px;
+                        min-height: 35px;
+                        max-width: 35px;
+                        max-height: 35px;
+                        margin-right: 5px;
+                        margin-top: 8px;                        
+                    }
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                        margin-left: 5px;
+                    }
+                }
+
+
+
+
+
+
+                .Firmness{
+                    .circleOne{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Firmness3.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleOneActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Firmness1.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleTwo{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Firmness4.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleTwoActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Firmness2.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .Equilibrium{
+                    .circleOne{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Equilibrium2.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleOneActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Equilibrium1.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .Multivit{
+                    .circleOneActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Multivit1.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleOne{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Multivit3.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleTwoActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Multivit2.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleTwo{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Multivit4.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+
+                .Hyaluronic{
+                    .circleOneActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Hyaluronic1.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }  
+                    .circleOne{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Hyaluronic2.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }                
+                }
+
+                .Radiant{
+                    .circleOneActive{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Radiant1.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .circleOne{
+                        background-image: url('../../../../utils/img/tecnologies/peelings/Radiant2.png');
+                        background-size: 30px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+           }
+       }
+    }
+
+
+}
+
+
+
+
+.Imagen1{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back1.png');
+        background-position: right;
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        background-position-y: 19vh;
+        background-position-x: 48.5vw;
+    }
+}
+.Imagen2{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back2.png');
+        background-position: right;
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        background-position-y: 19vh;
+        background-position-x: 48.5vw;
+    }
+}
+
+.Imagen3{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back3.png');
+        background-position: right;
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        background-position-y: 19vh;
+        background-position-x: 48.5vw;
+    }
+}
+
+
+.Imagen4{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back4.png');
+        background-position: right;
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        background-position-y: 19vh;
+        background-position-x: 48.5vw;
+    }
+}
+
+
+
+.Imagen5{
+    .contentTechnologiesSmartPeelings{
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url('../../../../utils//img/tecnologies/peelings/back5.png');
+        background-position: right;
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        background-position-y: 19vh;
+        background-position-x: 48.5vw;
+    }
+}
