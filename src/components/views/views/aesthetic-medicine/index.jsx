@@ -10,6 +10,14 @@ import Hialuronic2 from './hialuronic2'
 import Hialuronic3 from './hialuronic3'
 import Hialuronic4 from './hialuronic4'
 
+import Revitalizadores1 from './revitalizadores1'
+
+import Bioestimuladores1 from './bioestimuladores1'
+import Bioestimuladores2 from './bioestimuladores2'
+
+import ENZIMAS1 from './enzimas1'
+import ENZIMAS2 from './enzimas2'
+import ENZIMAS3 from './enzimas3'
 
 
 
@@ -31,8 +39,22 @@ const Toxina2 = require('../../../utils/img/aesthetic/toxina/Icon2.png')
 
 
 const Fillers1 = require('../../../utils/img/aesthetic/fillers/Icon1.png')
-
 const Fillers2 = require('../../../utils/img/aesthetic/fillers/Icon1-0.png')
+
+
+const Revitalizadores0 = require('../../../utils/img/aesthetic/fillers/Revitalizadores/Icon0.png')
+
+const Bioestimuladores0 = require('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon0.png')
+
+
+
+
+
+const Enzimas = require('../../../utils/img/aesthetic/enzimas/Icon0.png')
+
+
+const Exoxomas1 = require('../../../utils/img/aesthetic/exosomas/Icon1.png')
+const Exoxomas2 = require('../../../utils/img/aesthetic/exosomas/Icon2.png')
 
 
 
@@ -52,12 +74,29 @@ const Aesthetic = () =>{
 
 
     const[vistaToxina,setVistaToxina]  = useState('')
+    const[subButton,setsubButton] = useState(0)
 
 
 
     const[vistaFillers,setVistaFillers]  = useState('')
     const[stateHialuronic,setStateHialuronic]  = useState(0)
 
+    const[vistaEnzimas,setVistaEnzimas]  = useState('')
+
+    const[stateEnzimas,setStateEnzimas]  = useState(0)
+
+
+    function handleVistaFillers (id){
+        setStateHialuronic(0)
+        setsubButton(0)
+        setVistaFillers(id)       
+    }
+
+    function handleVistaEnzimas (id){
+        setStateEnzimas(0)
+        setsubButton(0)
+        setVistaEnzimas(id)       
+    }
 
     function handleViewTecnologies(id){
         setVistaTechnologies(id)
@@ -72,12 +111,12 @@ const Aesthetic = () =>{
         if(valor=='Back'){
             
             if(vistaTechnologies == 1){
-                setVistaTechnologies(8)
+                setVistaTechnologies(4)
             }else{
                 setVistaTechnologies(vistaTechnologies-1)
             }
         }else if(valor=='Forward'){
-            if(vistaTechnologies == 8){
+            if(vistaTechnologies == 4){
                 setVistaTechnologies(1)
             }else{
                 setVistaTechnologies(vistaTechnologies+1)
@@ -99,12 +138,22 @@ const Aesthetic = () =>{
             setsubButton(3)
             setStateHialuronic(4)
         }
+        if(id==5){
+            setsubButton(5)
+            setStateHialuronic(5)
+        }
+        if(id==6){
+            setsubButton(6)
+            setStateHialuronic(6)
+        }
+        if(id==7){
+            setsubButton(7)
+            setStateHialuronic(7)
+        }
     }
 
 
-    const[subButton,setsubButton] = useState(0)
-
-
+ 
 
 
 
@@ -152,6 +201,10 @@ const Aesthetic = () =>{
                     </div>
                     :<></>
             }
+
+
+
+
 
             {
                 vistaTechnologies == 1 ?
@@ -252,7 +305,6 @@ const Aesthetic = () =>{
                                 <div className="containerPoints">
                                     <PuntosToxina1 />
                                 </div>:""
-
                             }                                              
                             {
                                 vistaToxina=='ToxinaDos'?
@@ -263,6 +315,10 @@ const Aesthetic = () =>{
                     </div>
                     :<></>
             }
+
+
+
+
 
             {
                 vistaTechnologies == 2 ?
@@ -286,6 +342,16 @@ const Aesthetic = () =>{
                                         vistaFillers=='FillersUno'?
                                         <img src={AcidoHialuronico1} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
                                     }
+                                    {
+                                        vistaFillers=='FillersDos'?
+                                        <img src={Revitalizadores0} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
+                                    }
+
+                                    {
+                                        vistaFillers=='FillersTres'?
+                                        <img src={Bioestimuladores0} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
+                                    }
+
                                     <label className='price'>Desde $<p>9,000</p></label>                                  
                                 </div>
                             </div>                           
@@ -294,7 +360,7 @@ const Aesthetic = () =>{
                             {
                                 vistaFillers=='FillersUno'?
                                     <p>
-                                       El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
+                                        El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
                                         <br />
                                         Reticulado sirve como relleno por su retención del agua y su densidad.
                                         <br />
@@ -314,33 +380,103 @@ const Aesthetic = () =>{
                             }                        
                             {
                                 vistaFillers=='FillersDos'?
-                                    <p>                                        
-                                        El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
-                                        <br /><br />
-                                        Reticulado sirve como relleno por su retención del agua y su densidad.
-                                        <br /><br />
-                                        No Reticulado sirve como una sustancia ligera para hidratar la piel que se infiltra a nivel superficial.
-                                        <br /><br />
-                                        El uso de cada uno depende del resultado esperado.
-                                    </p>:""
+                                    <div>                                        
+                                        <p>                                        
+                                            Un auténtico booster de nutrición cutánea formulado de forma científica.
+                                            <br /><br />
+                                            Aporta a tu piel hidratación, elasticidad, luminosidad y firmeza.                                                                              
+                                        </p>
+                                        <ul >
+                                            <li>Estimula fibrolastos</li>
+                                            <li>Estimula el colágeno</li>
+                                            <li>Estimula radicales libres</li>
+                                        </ul>
+                                    </div>    
+                                    :""
                             }
-                                                     
+
                             {
                                 vistaFillers=='FillersTres'?
                                     <p>
-                                        Auxiliar en el tratamiento para sudoración excesiva (hiperhidrosis).
-
+                                        Su función es estimular la producción de colágeno en la piel para mantener la firmeza, elasticidad y flexibilidad apropiada.
                                     </p>:""
                             }
+                            {
+                                subButton==6?
+                                    <div>                                        
+                                        <p>                                        
+                                            Beneficios
+                                        </p>
+                                        <ul >
+                                            <li>Restauración de volumen inmediata </li>
+                                            <li>Estimulación de producción de colágeno</li>
+                                            <li>Rellena arrugas</li>
+                                            <li>Disminuye pliegues</li>
+                                            <li>Mejora el aspecto de flacidez</li>
+                                            <li>Perfilamiento y proyección facial</li>                                     
+                                        </ul>
+                                    </div>    
+                                    :""
+                            }
+
+                            {
+                                subButton==7?
+                                    <div>                                        
+                                        <p>                                        
+                                            Beneficios
+                                        </p>
+                                        <ul >
+                                            <li>Restauración de volumen inmediata </li>
+                                            <li>Estimulación de producción de colágeno </li>
+                                            <li>Rellena arrugas</li>
+                                            <li>Rejuvenecimiento facial </li>
+                                            <li>Proporciona un efecto natural</li>
+                                            <li>Mejora el aspecto de flacidez</li>
+                                            <li>Perfilamiento y proyección facial</li>                                            
+                                        </ul>
+                                    </div>    
+                                    :""
+                            }                       
+                           
                         </div>
 
                         <div className="containerDescriptions">
-                            <ul className="ul">
-                                <li><div /><p>Duración de tratamiento: 60 min</p></li>
-                                <li><div /><p>Duración de efecto: 6 a 14 meses </p></li>
-                                <li><div /><p>Resultados visibles de forma instantánea</p></li>
-                                <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
-                            </ul>
+                            {
+                                vistaFillers==''?
+                                <ul className="ul">
+                                    <li><div /><p>Duración de tratamiento: 60 min</p></li>
+                                    <li><div /><p>Duración de efecto: 6 a 14 meses </p></li>
+                                    <li><div /><p>Resultados visibles de forma instantánea</p></li>
+                                    <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
+                                </ul>:""
+                            }
+                            {
+                                vistaFillers=='FillersUno'?
+                                <ul className="ul">
+                                    <li><div /><p>Duración de tratamiento: 60 min</p></li>
+                                    <li><div /><p>Duración de efecto: 6 a 14 meses </p></li>
+                                    <li><div /><p>Resultados visibles de forma instantánea</p></li>
+                                    <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
+                                </ul>:""
+                            }
+                            {
+                                vistaFillers=='FillersDos'?
+                                <ul className="ul">
+                                    <li><div /><p>Duración de tratamiento: 40 min</p></li>
+                                    <li><div /><p>Duración de efecto: 3 a 4 meses </p></li>
+                                    <li><div /><p>Resultados visibles de forma instantánea</p></li>
+                                    <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
+                                </ul>:""
+                            }
+                           {
+                                vistaFillers=='FillersTres'?
+                                <ul className="ul">
+                                    <li><div /><p>Duración de tratamiento: 60 min</p></li>
+                                    <li><div /><p>Duración de efecto: hasta 14 meses</p></li>
+                                    <li><div /><p>Resultados visibles de forma instantánea</p></li>
+                                    <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
+                                </ul>:""
+                            }
                         </div>         
                         <div className="containerOpcions">
                             { 
@@ -358,13 +494,13 @@ const Aesthetic = () =>{
                                                      
                         </div>         
                         <div className="containerButtons">
-                            <div onClick={() => setVistaFillers('FillersUno') } className={vistaFillers=='FillersUno'?"BotonActivo":""}  >
+                            <div onClick={() => handleVistaFillers('FillersUno') } className={vistaFillers=='FillersUno'?"BotonActivo":""}  >
                                 Ácido Hialurónico
                             </div>                        
-                            <div onClick={() => setVistaFillers('FillersDos') } className={vistaFillers=='FillersDos'?"BotonActivo":""} >
+                            <div onClick={() => handleVistaFillers('FillersDos') } className={vistaFillers=='FillersDos'?"BotonActivo":""} >
                                 Revitalizadores
                             </div>
-                            <div onClick={() => setVistaFillers('FillersTres') } className={vistaFillers=='FillersTres'?"BotonActivo":""} >
+                            <div onClick={() => handleVistaFillers('FillersTres') } className={vistaFillers=='FillersTres'?"BotonActivo":""} >
                                 Bioestimuladores
                             </div>
 
@@ -372,9 +508,6 @@ const Aesthetic = () =>{
                             <div className="containerSubButtons">
                                 {
                                     vistaFillers=='FillersUno'?
-
-
-
                                         <div className={ 
                                                 (subButton==0?"containerContentButtons":"")+
                                                 (subButton==1?"containerContentButtonsOne":"")+
@@ -390,8 +523,7 @@ const Aesthetic = () =>{
                                                 {
                                                     subButton==1?
                                                         <p>
-                                                            Resultados a medida con rendimiento de larga duración.
-                                                         
+                                                            Resultados a medida con rendimiento de larga duración.                                                         
                                                             Tratamiento mínimamente invasivo.   
                                                         </p>
                                                         :""
@@ -399,8 +531,7 @@ const Aesthetic = () =>{
                                                 {
                                                     subButton==2?
                                                         <p>
-                                                            Reduce la aparición de líneas y arrugas, rehidrata la piel y restaura los volúmenes de perfiles faciales. 
-                                                            
+                                                            Reduce la aparición de líneas y arrugas, rehidrata la piel y restaura los volúmenes de perfiles faciales.                                                             
                                                             Tratamiento mínimamente invasivo.
                                                         </p>
                                                         :""
@@ -418,6 +549,52 @@ const Aesthetic = () =>{
                                         :
                                         ""
                                 }
+
+                                
+                                {
+                                    vistaFillers=='FillersDos'?
+                                        <div className="containerContentButtonsOneRevitalizadores">
+                                            <div className="contentSubButtonsRevitalizadores">
+                                                <div className={subButton==5?"buttonOneRevitalizadores":"buttonOneRevitalizadores"} onClick={()=>changeViewHyaluronic(5)}></div>
+                                            </div>
+                                        </div>
+                                        :
+                                        ""
+                                }
+
+
+
+
+                                {
+                                    vistaFillers=='FillersTres'?
+                                        <div className="containerContentButtonsBio">
+                                            <div className="contentSubButtons">
+                                                <div className={subButton==6?"buttonFiveActive":"buttonFive"} onClick={()=>changeViewHyaluronic(6)}></div>
+                                                <div className={subButton==7?"buttonSixActive":"buttonSix"} onClick={()=>changeViewHyaluronic(7)}></div>
+                                            </div>
+                                            <div className="contentTextBio">
+                                                {
+                                                    subButton==6?
+                                                        <p>
+                                                           Sustancia que ayuda a restaurar el colágeno estimulando las células propias.
+                                                            Proporciona soporte estructural a la piel
+                                                            y volumen.
+                                                        </p>
+                                                        :""
+                                                }
+                                                {
+                                                    subButton==7?
+                                                        <p>
+                                                           Relleno facial formado por macropartículas que restauran el colágeno agotado.
+                                                            Tiene dos fines: generar volumen y ser bioestimulador.
+                                                        </p>
+                                                        :""
+                                                }
+                                            </div>
+                                        </div>
+                                        :
+                                        ""
+                                }
                             </div>                        
                         </div>                        
                     
@@ -425,6 +602,16 @@ const Aesthetic = () =>{
                         {
                             vistaFillers=='FillersUno'?
                             <div className="backgroundImageOne">                                
+                            </div>:""
+                        }     
+                        {
+                            vistaFillers=='FillersTres'?
+                            <div className="backgroundImageOne">                                
+                            </div>:""
+                        }    
+                         {
+                            vistaFillers=='FillersDos'?
+                            <div className="backgroundImageOneRevitalizadores">                                
                             </div>:""
                         }     
                         {
@@ -458,9 +645,34 @@ const Aesthetic = () =>{
                                 <Hialuronic4 />
                             </div>:""
                         }
+                        {
+                            stateHialuronic==5?
+                            <div className="containerPoints">
+                                <Revitalizadores1 />
+                            </div>:""
+                        }
+
+
+                        {
+                            stateHialuronic==6?
+                            <div className="containerPoints">
+                                <Bioestimuladores1 />
+                            </div>:""
+                        }
+
+                        {
+                            stateHialuronic==7?
+                            <div className="containerPoints">
+                                <Bioestimuladores2 />
+                            </div>:""
+                        }
                     </div>
                     :<></>
             }
+
+
+
+
 
 
 
@@ -474,110 +686,144 @@ const Aesthetic = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Fillers1}  />
+                            <img src={Enzimas}  />
 
                            
                         </div>
                         <div className="containerScores">
                             <div className="Score">                        
                                 <div>
-                                    <label className='price'>Desde $<p>9,000</p></label>                                  
+                                    <label className='price'>Desde $<p>5,000</p></label>                                                                      
+                                </div>
+                                <div>
+                                    <label className='price'>2da generación Desde $<p>10,000</p></label>                                                                      
                                 </div>
                             </div>                           
                         </div>
                         <div className="containerParagraph">
                             {
-                                vistaFillers=='FillersUno'?
+                                vistaEnzimas=='EnzimasUno'?
                                     <p>
-                                       El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
+                                        Se reduce el volumen sin dañar el tejido eliminado el exceso de sebo a nivel superficial dejando la piel limpia mejorando su aspecto y textura.
                                         <br /><br />
-                                        Reticulado sirve como relleno por su retención del agua y su densidad.
-                                        <br /><br />
-                                        No Reticulado sirve como una sustancia ligera para hidratar la piel que se infiltra a nivel superficial.
-                                        <br /><br />
-                                        El uso de cada uno depende del resultado esperado.
+                                        Disminuye adiposidades localizadas.
                                     </p>:
                                     ""
                             }
                             {
-                                vistaFillers==''?
+                                vistaEnzimas=='EnzimasDos'?
                                     <p>
-                                        Aporta hidratación y volumen en la piel, remodelando y mejorando la estética facial.
-                                        Potencializa el efecto de esculpir, voluminizar y suavizar el rostro.
-                                        Resultados a medida.
-                                    </p>:""
-                            }                        
-                            {
-                                vistaFillers=='FillersDos'?
-                                    <p>                                        
-                                        El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
+                                        IRenueva las fibras de colágeno y estimula su regeneración promoviendo así la renovación de la estructura facial o corporal con potente efecto.
                                         <br /><br />
-                                        Reticulado sirve como relleno por su retención del agua y su densidad.
-                                        <br /><br />
-                                        No Reticulado sirve como una sustancia ligera para hidratar la piel que se infiltra a nivel superficial.
-                                        <br /><br />
-                                        El uso de cada uno depende del resultado esperado.
-                                    </p>:""
+                                        Mejora la textura, flexibilidad y toxicidad de la piel.
+                                    </p>:
+                                    ""
                             }
-                                                     
                             {
-                                vistaFillers=='FillersTres'?
+                                vistaEnzimas=='EnzimasTres'?
                                     <p>
-                                        Auxiliar en el tratamiento para sudoración excesiva (hiperhidrosis).
-
-                                    </p>:""
+                                        Incrementa la permeabilidad dérmica, el drenaje linfático y el flujo sanguíneo.
+                                    </p>:
+                                    ""
                             }
                         </div>
 
                         <div className="containerDescriptions">
                             <ul className="ul">
-                                <li><div /><p>Duración de tratamiento: 60 min</p></li>
-                                <li><div /><p>Duración de efecto: 6 a 14 meses </p></li>
-                                <li><div /><p>Resultados visibles de forma instantánea</p></li>
-                                <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
+                                <li><div /><p>Resultados visibles a partir de un mes de la primera sesión</p></li>
+                                <li><div /><p>Se recomiendan mínimo 3 sesiones para un resultado garantizado </p></li>
+                                <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                                
                             </ul>
                         </div>         
 
 
 
-                        <div className="containerOpcions">
-                            <div>
-                                <label>
-                                    Efecto lifting
-                                    <p>
-                                    </p>
-                                </label>
-                                <p>Armonización facial y perfilamiento, a partir de los 30 años</p>
-                            </div>                              
-                        </div>         
-
-
-                        <div className="containerButtons">
-                            <div onClick={() => setVistaFillers('FillersUno') }>
-                            Ácido Hialurónico
+                        <div className="containerButtonsEnzimas">
+                            <div onClick={() => handleVistaEnzimas('EnzimasUno') }>
+                            { vistaEnzimas=='EnzimasUno'? <div className='EnzimasLogo1Activo' />:<div className='EnzimasLogo1' /> }
+                            <label>SLIM+</label>
                             </div>
-                            <div onClick={() => setVistaFillers('FillersDos') }>
-                            Revitalizadores
+                            <div onClick={() => handleVistaEnzimas('EnzimasDos') }>
+                            { vistaEnzimas=='EnzimasDos'? <div className='EnzimasLogo2Activo' />:<div className='EnzimasLogo2' /> }
+                            <label>SMOOTH+</label>                            
                             </div>
-                            <div onClick={() => setVistaFillers('FillersTres') }>
-                            Bioestimuladores
+                            <div onClick={() => handleVistaEnzimas('EnzimasTres') }>
+                            { vistaEnzimas=='EnzimasTres'? <div className='EnzimasLogo3Activo' />:<div className='EnzimasLogo3' /> }
+                            <label>DRAIN+</label>                            
                             </div>
                         </div>
 
                         
-                            {
-                                vistaToxina=='ToxinaUno'?
-                                <div className="containerPoints">
-                                    <PuntosToxina1 />
-                                </div>:""
+                            
+                        {
+                            vistaEnzimas=="EnzimasUno"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }        
+                        
+                
+                        {
+                            vistaEnzimas=="EnzimasDos"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }        
+                        
+                        {
+                            vistaEnzimas=="EnzimasTres"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }        
+                        
 
-                            }                                              
+                        {
+                             stateEnzimas==1?
+                            <div className="backgroundImageOne">                                
+                            </div>:""
+                        }     
+                          {
+                             stateEnzimas==2?
+                            <div className="backgroundImageTwo">                                
+                            </div>:""
+                        }     
+                          {
+                             stateEnzimas==3?
+                            <div className="backgroundImageThree">                                
+                            </div>:""
+                        }     
+
+
+
                             {
-                                vistaToxina=='ToxinaDos'?
+                                
+                                stateEnzimas==1?
                                 <div className="containerPoints">
-                                    <PuntosToxina2 />
-                                </div>:""
-                            }
+                                    <ENZIMAS1 />
+                                </div>:""                                
+                            } 
+                             {
+                                
+                                stateEnzimas==2?
+                                <div className="containerPoints">
+                                    <ENZIMAS2 />
+                                </div>:""                                
+                            }     
+                             {
+                                
+                                stateEnzimas==3?
+                                <div className="containerPoints">
+                                    <ENZIMAS3 />
+                                </div>:""                                
+                            }                                                  
+                          
                     </div>
                     :<></>
             }
@@ -601,103 +847,53 @@ const Aesthetic = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Fillers1}  />
+                            <img src={Exoxomas1} style={{maxWidth:"180px"}} />
 
                            
                         </div>
                         <div className="containerScores">
-                            <div className="Score">                        
+                            <img src={Exoxomas2} style={{maxWidth:"100px"}}  />
+                            <div className="Score">                                                    
                                 <div>
-                                    <label className='price'>Desde $<p>9,000</p></label>                                  
+                            
                                 </div>
                             </div>                           
                         </div>
-                        <div className="containerParagraph">
-                            {
-                                vistaFillers=='FillersUno'?
-                                    <p>
-                                       El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
-                                        <br /><br />
-                                        Reticulado sirve como relleno por su retención del agua y su densidad.
-                                        <br /><br />
-                                        No Reticulado sirve como una sustancia ligera para hidratar la piel que se infiltra a nivel superficial.
-                                        <br /><br />
-                                        El uso de cada uno depende del resultado esperado.
-                                    </p>:
-                                    ""
-                            }
-                            {
-                                vistaFillers==''?
-                                    <p>
-                                        Aporta hidratación y volumen en la piel, remodelando y mejorando la estética facial.
-                                        Potencializa el efecto de esculpir, voluminizar y suavizar el rostro.
-                                        Resultados a medida.
-                                    </p>:""
-                            }                        
-                            {
-                                vistaFillers=='FillersDos'?
-                                    <p>                                        
-                                        El ácido hialurónico es utilizado en dos formas reticulado y no reticulado.
-                                        <br /><br />
-                                        Reticulado sirve como relleno por su retención del agua y su densidad.
-                                        <br /><br />
-                                        No Reticulado sirve como una sustancia ligera para hidratar la piel que se infiltra a nivel superficial.
-                                        <br /><br />
-                                        El uso de cada uno depende del resultado esperado.
-                                    </p>:""
-                            }
-                                                     
-                            {
-                                vistaFillers=='FillersTres'?
-                                    <p>
-                                        Auxiliar en el tratamiento para sudoración excesiva (hiperhidrosis).
-
-                                    </p>:""
-                            }
+                        <div className="containerParagraph">                           
+                            <p>
+                                Son regeneradores de doble acción (intensa) formulado para absorberse rápidamente dentro de la piel. Se regenera la piel otorgando rejuvenecimiento manteniendo la firmeza y elasticidad de la piel.
+                                <br/>
+                                <br/>
+                                Tratamiento en conjunto con tecnología nanofraccional (Luxe resurfacing)
+                            </p>                            
                         </div>
 
                         <div className="containerDescriptions">
                             <ul className="ul">
-                                <li><div /><p>Duración de tratamiento: 60 min</p></li>
-                                <li><div /><p>Duración de efecto: 6 a 14 meses </p></li>
-                                <li><div /><p>Resultados visibles de forma instantánea</p></li>
+                                <li><div /><p>Duración del tratamiento: 90 minutos</p></li>
+                                <li><div /><p>Cambios desde la primera sesión sin embargo hasta el día 7 sentirás el total de cambios en tu piel</p></li>                                
                                 <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
                             </ul>
                         </div>         
 
 
 
-                        <div className="containerOpcions">
-                            <div>
-                                <label>
-                                    Efecto lifting
-                                    <p>
-                                    </p>
-                                </label>
-                                <p>Armonización facial y perfilamiento, a partir de los 30 años</p>
-                            </div>                              
-                        </div>         
-
+            
 
                         <div className="containerButtons">
-                            <div onClick={() => setVistaFillers('FillersUno') }>
+                            <div onClick={() => handleVistaFillers('FillersUno') }>
                             Ácido Hialurónico
                             </div>
-                            <div onClick={() => setVistaFillers('FillersDos') }>
+                            <div onClick={() => handleVistaFillers('FillersDos') }>
                             Revitalizadores
                             </div>
-                            <div onClick={() => setVistaFillers('FillersTres') }>
-                            Bioestimuladores
-                            </div>
-                        </div>
-
-                        
+                      
+                        </div>                        
                             {
                                 vistaToxina=='ToxinaUno'?
                                 <div className="containerPoints">
                                     <PuntosToxina1 />
                                 </div>:""
-
                             }                                              
                             {
                                 vistaToxina=='ToxinaDos'?

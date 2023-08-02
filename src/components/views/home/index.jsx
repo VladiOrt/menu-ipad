@@ -4,10 +4,15 @@ import { useState } from 'react'
 import './index.scss'
 
 import Img1 from '../../utils/img/home/icons/Icon1.png'
+import Img1Dos from '../../utils/img/home/icons/Icon1-2.png'
 import Img2 from '../../utils/img/home/icons/Icon2.png'
+import Img2Dos from '../../utils/img/home/icons/Icon2-2.png'
 import Img3 from '../../utils/img/home/icons/Icon3.png'
+import Img3Dos from '../../utils/img/home/icons/Icon3-2.png'
 import Img4 from '../../utils/img/home/icons/Icon4.png'
+import Img4Dos from '../../utils/img/home/icons/Icon4-2.png'
 import Img5 from '../../utils/img/home/icons/Icon5.png'
+import Img5Dos from '../../utils/img/home/icons/Icon5-2.png'
 
 
 
@@ -26,15 +31,26 @@ const Home = () => {
 
 
     function handleMenu(id){
+        console.log("Valor recibido" , id)
+        setVista(6)
+     
+        setTimeout(() => {
+            Ver()
+        }, 0.5);
 
-        if(id==0){
-            console.log("Se activa")
-            setFondo('')
-            setVista(0)
-        }else{
-            setFondo('Activo')
-            setVista(id)
+
+        function Ver(){
+            if(id==0){
+                console.log("Se activa")
+                setFondo('')
+                setVista(0)
+            }else{
+                setFondo('Activo')
+                
+                setVista(id)
+            }
         }
+        
 
     }
 
@@ -51,32 +67,57 @@ const Home = () => {
                     <div className="containerButtonVacio" onClick={()=>handleMenu(0)}></div>
                     <div className="containerButtons">
                         <a onClick={()=>handleMenu(1)}>
-                            <img src={Img1} />                        
+                            {
+                                vista==1?
+                                <img src={Img1} />       
+                                :
+                                <img src={Img1Dos} />       
+                            }                 
                             <label>
                                 Tecnologías
                             </label>
                         </a>
                         <a onClick={()=>handleMenu(2)}> 
-                            <img src={Img2} />                        
+                            {
+                                vista==2?
+                                <img src={Img2} />       
+                                :
+                                <img src={Img2Dos} />       
+                            }                             
                             <label>
                                 Faciales
                             </label>
                         </a>
                         <a onClick={()=>handleMenu(3)}>
-                            <img src={Img3} />                        
+                            {
+                                vista==3?
+                                <img src={Img3} />       
+                                :
+                                <img src={Img3Dos} />       
+                            }                         
                             <label>
                                 Corporales
                             </label>
                         </a>
                         <a onClick={()=>handleMenu(4)}>
-                            <img src={Img4} />                        
+                            {
+                                vista==4?
+                                <img src={Img4} />       
+                                :
+                                <img src={Img4Dos} />       
+                            }                               
                             <label>
                                 Medicina
                                 Estética
                             </label>
                         </a>
                         <a onClick={()=>handleMenu(5)}>
-                            <img src={Img5} />                        
+                            {
+                                vista==5?
+                                <img src={Img5} />       
+                                :
+                                <img src={Img5Dos} />       
+                            }                            
                             <label>
                                 Planes de
                                 tratamientos
@@ -104,6 +145,10 @@ const Home = () => {
                     {
                         vista==5?
                             <Treatment />:<></>
+                    }
+                    {
+                        vista==6?
+                            <div />:<></>
                     }
                 </div>                
             </div>

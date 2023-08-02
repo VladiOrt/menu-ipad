@@ -24,16 +24,18 @@
 
         background-image: url('../../../utils/img/tecnologies/background.png');
         background-size: cover;
+        background-position-x: -4.5vw;
         label{
             margin-left: 5vw;
-            font-size: 3rem;
-            min-height: 5vh;
+            font-size: 2.5rem;
+            min-height: 3vh;
             color: #A9625E;
-            font-weight: 400;
-            font-family: greycliff-cf;
+            font-family:  "greycliff-cf", sans-serif;
+            font-weight: 500;
+            font-style: normal;
         }
         p{
-            margin-top: 3vh;
+            margin-top: 1vh;
             margin-left: 5vw;
             min-height: 5vh;
             max-width: 52vw;
@@ -43,7 +45,7 @@
             font-style: oblique;
         }
         nav{
-            margin-top: 3vh;
+            margin-top: 2vh;
             ul{
                 min-width:40vw;
                 max-width:40vw;
@@ -51,12 +53,14 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: space-around;
+                justify-content: flex-start;
                 align-items: flex-start;
                 min-height: 70vh;                
                 li{
+                    margin-top: 10px;
                     border: none;
-                    background-color: #FFF;
+                    border: 1px solid #FFF;
+                    background-color: #FAFAFA;
                     max-width: 25vw;
                     margin-left: 5vw;
                     min-width: 25vw;
@@ -73,12 +77,12 @@
                         max-height: 36px;
                         background-image: url('../../../utils//img/tecnologies/Circle.png');
                         background-position: center;
-                        background-size: 30px;
+                        background-size: 27px;
                         background-repeat: no-repeat;
                     }
                     label{
                         margin-left: 10px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -153,6 +157,7 @@
                     align-items: center;
                     flex-direction: row;
                     .price{
+                        
                         font-size: 1.5rem;
                         display: flex;
                         justify-content: flex-start;

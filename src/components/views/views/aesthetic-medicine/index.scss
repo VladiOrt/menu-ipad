@@ -18,15 +18,18 @@
         max-height: 95vh;
         padding-top: 5vh;
 
-        background-image: url('../../../utils/img/bodily/background.png');
+        background-image: url('../../../utils/img/aesthetic/background.png');
         background-size: cover;
+        background-position-x: -5vw;
+        background-position-y: -5vh;
         label{
             margin-left: 5vw;
-            font-size: 3rem;
+            font-size: 2.5rem;
             min-height: 5vh;
             color: #00B89E;
-            font-weight: 400;
-            font-family: greycliff-cf;
+            font-family:  "greycliff-cf", sans-serif;
+            font-weight: 500;
+            font-style: normal;
         }
         p{
             margin-top: 3vh;
@@ -47,12 +50,14 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: space-around;
+                justify-content: flex-start;
                 align-items: flex-start;
                 min-height: 40vh;                
                 li{
+                    margin-top: 10px;
                     border: none;
-                    background-color: #FFF;
+                    border: 1px solid #FFF;
+                    background-color: #FAFAFA;
                     max-width: 25vw;
                     margin-left: 5vw;
                     min-width: 25vw;
@@ -69,12 +74,12 @@
                         max-height: 36px;
                         background-image: url('../../../utils//img/aesthetic/Circle.png');
                         background-position: center;
-                        background-size: 30px;
+                        background-size: 27px;
                         background-repeat: no-repeat;
                     }
                     label{
                         margin-left: 10px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -459,6 +464,11 @@
         color: #3C3C3C;
         font-size: 1rem;
         font-family: Avenir;
+        ul{
+            color: #3C3C3C;
+            list-style-position: inside;
+            
+        }
     }       
     .containerDescriptions{
         margin-top: 2vh;
@@ -519,7 +529,7 @@
         }
     }
 
-    .containerButtons{
+    .containerButtons , .containerButtonsRevitalizadores{
         margin-left: 5vw;
         margin-top: 0vh;
         min-width: 30vw;
@@ -569,9 +579,21 @@
 
 
 
+        
 
 
-        .containerSubButtons{
+
+
+
+
+
+
+
+
+
+
+
+        .containerSubButtons, .containerSubButtonsRevitalizadores {
             min-width: 18vw;
             display: flex;
             flex-direction: column;
@@ -580,9 +602,14 @@
             padding: 0px;
             border: none;
 
-            .containerContentButtons, .containerContentButtonsOne ,
-            .containerContentButtonsTwo,
-            .containerContentButtonsThree
+            .containerContentButtons, 
+            .containerContentButtonsOne ,
+            .containerContentButtonsTwo ,
+            .containerContentButtonsThree ,
+            .containerContentButtonsOneRevitalizadores ,
+            .containerContentButtonsFive ,
+            .containerContentButtonsSix ,
+            .containerContentButtonsBio
                         
             {
                 min-width: 18vw;
@@ -594,7 +621,7 @@
                 margin: 0px;
                 padding: 0px;
                 border: none;
-                .contentSubButtons{
+                .contentSubButtons, .contentSubButtonsRevitalizadores{
                     margin: 0px;
                     padding: 0px;
                     display: flex;
@@ -608,12 +635,23 @@
                         border-radius: 20px;
 
                     }
-                    .buttonOne, .buttonOneActive{
+                    .buttonOne, .buttonOneActive , .buttonOneRevitalizadores {
                         border: none;
                         background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Icon1.png');
                         background-size: 50px;
                         background-position: center;
                         background-repeat: no-repeat;
+                    }
+                    .buttonOneRevitalizadores{
+                        min-width: 100px;
+                        max-width: 100px;
+                        min-height: 40px;
+                        border-radius: 0px;
+                        background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/Icon1.png');
+                        background-size: 100px;
+                    }
+                    .buttonOneActiveRevitalizadores{
+                        background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/Iconx.png');
                     }
                     .buttonOneActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Icon1-2.png');
@@ -639,17 +677,55 @@
                     .buttonThreeActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Icon3-2.png');
                     }
+
+
+
+
+
+
+                    .buttonFive{
+                        border: none;
+                        background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1.png');
+                        background-size: 50px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .buttonFiveActive{
+                        background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1-2.png');
+                        background-size: cover;
+                        border: none;
+                    }
+
+                    .buttonSix{
+                        background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2.png');
+                        background-size: cover;
+                        border: none;
+                    }
+                    .buttonSixActive{
+                        background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2-2.png');
+                        background-size: cover;
+                        border: none;
+                    }
+
+
                 }
-                .contentText{
+                .contentText , .contentTextRevitalizadores, .contentTextBio {
                     border: none;
                     min-width: 17vw;
                     margin-left: 2vw;
 
                 }
+                .contentTextBio{
+                    min-height: 105px;
+                    font-size: 0.9rem;
+                }
             }
 
 
-
+            .containerContentButtonsOneRevitalizadores{
+                margin-top: 8.4vh;
+            }
+           
             .containerContentButtonsOne{
                 background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Fondo1.png');
                 background-repeat: no-repeat;
@@ -676,6 +752,10 @@
             }
 
 
+            .containerContentButtonsBio{
+                flex-direction: column-reverse;
+            }
+
         }
     }
       
@@ -692,6 +772,16 @@
         min-width: 50vw;
         min-height: 85vh;
         background-image: url('../../../utils/img/aesthetic/fillers/Back1.png');
+        background-size: 50vw;        
+    }
+    .backgroundImageOneRevitalizadores{
+        background-color: #FFF;
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 35vw;
+        min-width: 50vw;
+        min-height: 85vh;
+        background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/background.png');
         background-size: 50vw;        
     }
     .ButtonsTop{
@@ -767,7 +857,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url('../../../utils/img/aesthetic/fillers/Back0.png');
+    background-image: url('../../../utils/img/aesthetic/enzimas/background.png');
     background-position: right;
     background-size: 52vw;
     background-repeat: no-repeat;
@@ -792,7 +882,7 @@
         align-items: flex-start;
         flex-direction: column;
         img{
-            max-width: 250px;
+            max-width: 180px;
             margin-top: 20px;
         }
     }
@@ -800,7 +890,7 @@
         display: flex;
         flex-direction: column;
         min-width: 30vw;
-        margin-top: 3vh;
+        margin-top: 1vh;
         margin-left: 5vw;
         
         .Score{
@@ -818,7 +908,7 @@
                 align-items: center;
                 flex-direction: row;
                 .price{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -853,7 +943,7 @@
         margin-top: 3vh;
         margin-left: 5vw;
         color: #3C3C3C;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: Avenir;
     }       
     .containerDescriptions{
@@ -887,7 +977,7 @@
                     margin-top: 8px;                        
                 }
                 p{
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -915,28 +1005,132 @@
         }
     }
 
-    .containerButtons{
+    .containerButtonsEnzimas{
         margin-left: 5vw;
         margin-top: 3vh;
         min-width: 22vw;
         max-width: 22vw;
+        
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
         div{
-            border: 1px solid #3C3C3C;
-            margin-top: 20px;
+        
+            margin-top: 0px;
             min-width: 150px;
             max-width: 150px;
+            min-height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 0px;
+
+
+
+
+            div{
+                min-width: 40px;
+                max-width: 40px;
+                min-height: 40px;
+                border-radius: 20px;
+            }
+
+            .EnzimasLogo1, .EnzimasLogo1Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back0.png') ;
+                background-size: 35px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .EnzimasLogo1Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back0-1.png') ;            
+
+            }
+            .EnzimasLogo2, .EnzimasLogo2Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back1.png') ;
+                background-size: 35px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .EnzimasLogo2Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back1-1.png') ;
+            }
+            .EnzimasLogo3, .EnzimasLogo3Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back2.png') ;
+                background-size: 35px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .EnzimasLogo3Activo{
+                background-image: url('../../../utils/img/aesthetic/enzimas/back2-1.png') ;
+            }
+            label{
+                margin-left: 10px;
+            }
+
+        }
+    }    
+
+
+    .containerButtonsPoints{
+        position: absolute;
+        display: flex;
+        border:none;
+
+        min-width: 50vw;
+        margin-top: 10vh;
+        min-height: 40px;
+        margin-left: 35vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            min-width: 16.8vw;
             min-height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 5px;
-            font-family: avenir;
         }
-    }    
+        .active{
+            min-width: 16.8vw;
+            min-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E3E3E3;
+        }
+    }
+
+
+    .backgroundImageOne{
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 35vw;
+        min-width: 50vw;
+        min-height: 85vh;
+        background-image: url('../../../utils/img/aesthetic/fillers/Back1.png');
+        background-size: 50vw;        
+    }
+    .backgroundImageTwo{
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 35vw;
+        min-width: 50vw;
+        min-height: 85vh;
+        background-color: #FFF;
+        background-image: url('../../../utils/img/aesthetic/enzimas/background2.png');
+        background-size: 50vw;        
+    }
+    .backgroundImageThree{
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 35vw;
+        min-width: 50vw;
+        min-height: 85vh;
+        background-color: #FFF;
+        background-image: url('../../../utils/img/aesthetic/enzimas/background3.png');
+        background-size: 50vw;        
+    }
 }
 
 
@@ -971,7 +1165,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url('../../../utils/img/aesthetic/fillers/Back0.png');
+    background-image: url('../../../utils/img/aesthetic/exosomas/background.png');
     background-position: right;
     background-size: 52vw;
     background-repeat: no-repeat;
@@ -1125,20 +1319,23 @@
         min-width: 22vw;
         max-width: 22vw;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
 
         div{
-            border: 1px solid #3C3C3C;
+            border: none;
             margin-top: 20px;
-            min-width: 150px;
-            max-width: 150px;
-            min-height: 40px;
+            min-width: 120px;
+            max-width: 120px;
+            min-height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
             font-family: avenir;
+            text-align: center;
+            color: #FFF;
+            background-color: #BFA99A;
         }
     }    
 }

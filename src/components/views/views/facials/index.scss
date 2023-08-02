@@ -21,13 +21,16 @@
 
         background-image: url('../../../utils/img/facials/back.png');
         background-size: cover;
+        background-position-x: -5vw;
+        background-position-y: -5vh;
         label{
             margin-left: 5vw;
-            font-size: 3rem;
+            font-size: 2.5rem;
             min-height: 5vh;
             color: #A9625E;
-            font-weight: 400;
-            font-family: greycliff-cf;
+            font-family:  "greycliff-cf", sans-serif;
+            font-weight: 500;
+            font-style: normal;
         }
         p{
             margin-top: 3vh;
@@ -48,12 +51,14 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: space-around;
+                justify-content: flex-start;                
                 align-items: flex-start;
                 min-height: 70vh;                
                 li{
+                    margin-top: 10px;
                     border: none;
-                    background-color: #FFF;
+                    border: 1px solid #FFF;
+                    background-color: #FAFAFA;
                     max-width: 25vw;
                     margin-left: 5vw;
                     min-width: 25vw;
@@ -68,14 +73,14 @@
                         max-width: 36px;
                         min-height: 36px;
                         max-height: 36px;
-                        background-image: url('../../../utils//img/tecnologies/Circle.png');
+                        background-image: url('../../../utils//img/facials/circle.png');
                         background-position: center;
-                        background-size: 30px;
+                        background-size: 27px;
                         background-repeat: no-repeat;
                     }
                     label{
                         margin-left: 10px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;

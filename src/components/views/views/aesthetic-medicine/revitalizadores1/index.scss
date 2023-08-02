@@ -1,0 +1,127 @@
+.containerHialuronicCuatro{
+    min-width: 40vw;
+    max-width: 40vw;
+
+    min-height: 80vh;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    flex-wrap: nowrap;
+
+    .circle{
+        position: absolute;
+        background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
+        background-position: center;
+        background-size: 60px;
+        font-size: 40px;
+        min-width: 40px;
+        min-height: 40px;
+
+    }
+   
+    .One{
+        margin-top: 23vh;
+        margin-left: 15vw;
+    }
+    .Two{
+        margin-top: 28vh;
+        margin-left: 27vw;
+    }
+    .Three{
+        margin-top: 47vh;
+        margin-left: 17vw;
+    }
+    .Four{
+        margin-top: 48vh;
+        margin-left: 30vw;
+    }
+    .Five{
+        
+        margin-top: 75vh;
+        margin-left: 21vw;
+    }
+   
+
+
+    .Active{
+        
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       div{
+            min-width: 30px;
+            min-height: 30px;
+            border: 1px solid #00B89E;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                border-radius: 15px;              
+                min-width: 26px;
+                min-height: 26px;
+                border: 1px solid #00B89E;                
+            }
+       } 
+       
+        
+    }
+
+    .text{
+        border: 1px solid #00B89E;
+        position: absolute;
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 80px;
+        margin-top: 70vh;
+        margin-left: 25vw;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.5);
+        div{
+            margin-top: 10px;
+            margin-left: 10px;
+            max-height: 100px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 400px;
+            label{
+                max-width: 160px;
+                color: #00B89E;
+            }
+            p{
+                max-width: 160px;
+                color: #6A6A6A;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                img{
+                    min-width: 120px;
+                    max-width: 120px;
+                }
+            }
+            
+        }
+    }
+
+
+    .circleClose{
+        margin-left: 40vw;
+        margin-top: 66.5vh;
+        position: absolute;
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        
+        background-image: url('../../../../utils/img/aesthetic/toxina/circleClose.png');
+        background-size: 50px;
+
+    }
+
+}
