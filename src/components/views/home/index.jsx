@@ -68,7 +68,7 @@ const Home = () => {
                     <div className="containerButtons">
                         <a onClick={()=>handleMenu(1)}>
                             {
-                                vista==1?
+                                vista==1 || fondo=='' ?
                                 <img src={Img1} />       
                                 :
                                 <img src={Img1Dos} />       
@@ -79,7 +79,7 @@ const Home = () => {
                         </a>
                         <a onClick={()=>handleMenu(2)}> 
                             {
-                                vista==2?
+                                vista==2 || fondo==''?
                                 <img src={Img2} />       
                                 :
                                 <img src={Img2Dos} />       
@@ -90,7 +90,7 @@ const Home = () => {
                         </a>
                         <a onClick={()=>handleMenu(3)}>
                             {
-                                vista==3?
+                                vista==3 || fondo==''?
                                 <img src={Img3} />       
                                 :
                                 <img src={Img3Dos} />       
@@ -101,7 +101,7 @@ const Home = () => {
                         </a>
                         <a onClick={()=>handleMenu(4)}>
                             {
-                                vista==4?
+                                vista==4 || fondo==''? 
                                 <img src={Img4} />       
                                 :
                                 <img src={Img4Dos} />       
@@ -113,7 +113,7 @@ const Home = () => {
                         </a>
                         <a onClick={()=>handleMenu(5)}>
                             {
-                                vista==5?
+                                vista==5 || fondo==''?
                                 <img src={Img5} />       
                                 :
                                 <img src={Img5Dos} />       

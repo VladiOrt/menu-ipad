@@ -46,7 +46,13 @@ const Peelings = () => {
         <div className={"containerPeelings " + fondo} >
             <div className="contentTechnologiesSmartPeelings">             
                 <div className="containerIcons">
-                    <img src={Peelings1} style={{minWidth:"180px"}} />
+                    <div className="containerTitle">
+                                <div className="title">
+                                    Smart Peelings
+                                </div>
+                                <div className="subtitle">                             
+                                </div>
+                            </div>
                     <img src={Peelings2} />
                 </div>
                 <div className="containerScores">
@@ -76,7 +82,9 @@ const Peelings = () => {
                     </p>
                 </div>
 
-                <div className="imageContainerBackground">
+                <div className={vista!=0?
+                "imageContainerBackground":""
+                } >
                     
                 </div>
 

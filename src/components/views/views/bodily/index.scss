@@ -33,7 +33,7 @@
             font-style: normal;
         }
         p{
-            margin-top: 3vh;
+            margin-top: 1vh;
             margin-left: 5vw;
             min-height: 5vh;
             max-width: 52vw;
@@ -114,34 +114,60 @@
         background-position: right;
         background-size: 50vw;
         background-repeat: no-repeat;
-        background-position-y: 15vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 5vh;
+            margin-top: 10vh;
+            min-height: 60px;
+            line-height: 1rem;
+            max-height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             img{
                 max-width: 220px;
             }
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
         }
        .containerScores{
            display: flex;
            flex-direction: row;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
             .Score{
                 display: flex;
@@ -160,7 +186,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -187,7 +213,7 @@
             }
        }  
        .containerParagraph{
-            max-width: 28vw;
+            max-width: 25vw;
             margin-top: 5vh;
             padding-left: 5vw;
             color: #3C3C3C;
@@ -218,34 +244,59 @@
         background-position: right;
         background-size: 50vw;
         background-repeat: no-repeat;
-        background-position-y: 15vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 5vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             img{
                 max-width: 220px;
             }
+
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
            
             .Score{
@@ -267,7 +318,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -292,9 +343,18 @@
                     }
                 }
             }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
+            }
+
        }  
        .containerParagraph{
-            max-width: 30vw;
+            max-width: 28vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -305,7 +365,7 @@
            margin-top: 0vh;
            padding-left: 5vw;
            padding-top: 5vh;
-           max-width: 30vw;        
+           max-width: 28vw;        
            list-style: none;
            background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
            background-repeat: no-repeat;
@@ -363,34 +423,61 @@
         background-position: right;
         background-size: 50vw;
         background-repeat: no-repeat;
-        background-position-y: 15vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 5vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             img{
                 max-width: 300px;
             }
+
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
+
+
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
            
             .Score{
@@ -412,7 +499,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -437,9 +524,18 @@
                     }
                 }
             }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
+            }
+
        }  
        .containerParagraph{
-            max-width: 30vw;
+            max-width: 28vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -450,7 +546,7 @@
            margin-top: 0vh;
            padding-left: 5vw;
            padding-top: 5vh;
-           max-width: 30vw;        
+           max-width: 28vw;        
            list-style: none;
            background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
            background-repeat: no-repeat;
@@ -521,28 +617,54 @@
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: 8vh;
-        background-position-x: 30vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        background-position-y: -5vh;
+        background-position-x: 35vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             img{
                 max-width: 280px;
             }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
+
+
         }
        .containerScores{
            display: flex;
@@ -570,7 +692,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -595,6 +717,15 @@
                     }
                 }
             }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
+            }
+
        }  
        .containerParagraph{
             max-width: 25vw;
@@ -667,28 +798,53 @@
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: 8vh;
-        background-position-x: 32vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        background-position-y: -5vh;
+        background-position-x: 35vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             img{
                 max-width: 150px;
             }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
+
         }
        .containerScores{
            display: flex;
@@ -716,7 +872,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -740,6 +896,14 @@
                         font-style: oblique;
                     }
                 }
+            }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
             }
        }  
        .containerParagraph{
@@ -815,34 +979,59 @@
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: 8vh;
+        background-position-y: -5vh;
         background-position-x: 32vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             img{
                 max-width: 150px;
             }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
+
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
            
             .Score{
@@ -864,7 +1053,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -888,6 +1077,14 @@
                         font-style: oblique;
                     }
                 }
+            }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
             }
        }  
        .containerParagraph{
@@ -965,34 +1162,60 @@
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: 8vh;
-        background-position-x: 32vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        background-position-y: -5vh;
+        background-position-x: 35vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             img{
                 max-width: 150px;
             }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
+
+
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
            
             .Score{
@@ -1014,7 +1237,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -1039,6 +1262,15 @@
                     }
                 }
             }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
+            }
+
        }  
        .containerParagraph{
             max-width: 27vw;
@@ -1116,34 +1348,57 @@
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: 8vh;
-        background-position-x: 32vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        background-position-y: -5vh;
+        background-position-x: 35vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             img{
                 max-width: 150px;
             }
+              .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30vw;
+                .title{
+                    font-size: 2.5rem;
+                    color: #817DBA;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #817DBA;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
+            }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 3vh;
            margin-left: 5vw;
            
             .Score{
@@ -1165,7 +1420,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        color: #A9625E;
+                        color: #817DBA;
                         font-family: greycliff-cf;
                         font-weight: 500;
                         p{
@@ -1189,6 +1444,14 @@
                         font-style: oblique;
                     }
                 }
+            }
+
+            .Medium{
+                margin-top: 10px;
+            }
+
+            .Premium{
+                margin-top: 10px;
             }
        }  
        .containerParagraph{

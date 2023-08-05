@@ -214,7 +214,14 @@ const Aesthetic = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Toxina1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Toxina Butolínica
+                                </div>
+                                <div className="subtitle">
+                            
+                                </div>
+                            </div>
                             <img src={Toxina2} />
                         </div>
                         <div className="containerScores">
@@ -322,36 +329,55 @@ const Aesthetic = () =>{
 
             {
                 vistaTechnologies == 2 ?
-                    <div className={"contentAestheticFillers "+ vistaToxina } >
+                    <div className={"contentAestheticFillers "+ vistaToxina } style={vistaFillers!=''? {background:"none"}:  {background:""}}  >
                         <div className="hederButtons">
                             <img src={ArrowLeft} onClick={()=> changeView('Back')}/>
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            {
-                                vistaFillers==''?
-                                    <img src={Fillers1}  />         
-                                    :                                    
-                                    <img src={Fillers2}  />       
-                            }                                                   
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Fillers
+                                </div>
+                                <div className="subtitle">
+                                    {
+                                        vistaFillers=='FillersUno'?
+                                        "Ácido Hialurónico":""
+                                    }
+                                    {
+                                        vistaFillers=='FillersDos'?
+                                        "Revitalizadores":""
+                                    }
+
+                                    {
+                                        vistaFillers=='FillersTres'?
+                                        "Bioestimuladores":""
+                                    }
+
+                                </div>
+                            </div>                                                 
                         </div>
                         <div className="containerScores">
                             <div className="Score">                        
                                 <div>
                                     {
+                                    /*
                                         vistaFillers=='FillersUno'?
                                         <img src={AcidoHialuronico1} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
+                                    */
                                     }
                                     {
+                                    /*
                                         vistaFillers=='FillersDos'?
                                         <img src={Revitalizadores0} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
+                                    */ 
                                     }
-
                                     {
+                                    /*
                                         vistaFillers=='FillersTres'?
                                         <img src={Bioestimuladores0} style={{maxWidth:"170px",marginRight:"10px"}}  /> :""               
+                                    */
                                     }
-
                                     <label className='price'>Desde $<p>9,000</p></label>                                  
                                 </div>
                             </div>                           
@@ -686,7 +712,16 @@ const Aesthetic = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Enzimas}  />
+
+
+                        <div className="containerTitle">
+                                <div className="title">
+                                    Enzimas
+                                </div>
+                                <div className="subtitle">
+                                
+                                </div>
+                            </div>    
 
                            
                         </div>

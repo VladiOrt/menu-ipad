@@ -176,7 +176,14 @@ const Facials = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Detox1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Detox Express
+                                </div>
+                                <div className="subtitle">
+                                    Intro collection
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -204,7 +211,14 @@ const Facials = () =>{
 
 
                         <div className="containerIcons">
-                            <img src={DeepCleanse} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Deep Cleanse
+                                </div>
+                                <div className="subtitle">
+                                    Intro collection + Hydrolift
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -244,7 +258,15 @@ const Facials = () =>{
                         <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                     </div>
                     <div className="containerIcons">
-                        <img src={Hydratance1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Hydratance
+                                </div>
+                                <div className="subtitle">
+                                    Intro collection + Lumicell
+                                </div>
+                            </div>
+                        
                     </div>
                     <div className="containerScores">
                         <div className="Score">
@@ -271,7 +293,14 @@ const Facials = () =>{
 
 
                     <div className="containerIcons">
-                        <img src={Thermal1} />
+                        <div className="containerTitle">
+                            <div className="title">
+                                Thermal
+                            </div>
+                            <div className="subtitle">
+                                Intro collection + Thermostem
+                            </div>
+                        </div>
                     </div>
                     <div className="containerScores">
                         <div className="Score">
@@ -308,7 +337,14 @@ const Facials = () =>{
                         <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                     </div>
                     <div className="containerIcons">
-                        <img src={Aqua1} />
+                        <div className="containerTitle">
+                            <div className="title">
+                                Aqua lift
+                            </div>
+                            <div className="subtitle">
+                                Intro collection + Fototerapia
+                            </div>
+                        </div>
                     </div>
                     <div className="containerScores">
                         <div className="Score">
@@ -335,7 +371,14 @@ const Facials = () =>{
 
 
                     <div className="containerIcons">
-                        <img src={Lifting1} />
+                        <div className="containerTitle">
+                            <div className="title">
+                                Lifting
+                            </div>
+                            <div className="subtitle">
+                                Intro collection + Resveratrol
+                            </div>
+                        </div>
                     </div>
                     <div className="containerScores">
                         <div className="Score">
@@ -375,7 +418,14 @@ const Facials = () =>{
                     <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                 </div>
                 <div className="containerIcons">
-                    <img src={PetaPeel1} />
+                    <div className="containerTitle">
+                        <div className="title">
+                            Petal peel
+                        </div>
+                        <div className="subtitle">
+                            Intro collection + D-pigment
+                        </div>
+                    </div>
                 </div>
                 <div className="containerScores">
                     <div className="Score">
@@ -402,7 +452,14 @@ const Facials = () =>{
 
 
                 <div className="containerIcons">
-                    <img src={Magnetic1} />
+                    <div className="containerTitle">
+                        <div className="title">
+                            Magnetic mask
+                        </div>
+                        <div className="subtitle">
+                            Intro collection + DNA
+                        </div>
+                    </div>
                 </div>
                 <div className="containerScores">
                     <div className="Score">
@@ -443,7 +500,14 @@ const Facials = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Nefertari1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Nefertiti
+                                </div>
+                                <div className="subtitle">
+                                 
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">

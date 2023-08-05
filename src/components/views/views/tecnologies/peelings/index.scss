@@ -14,25 +14,39 @@
         background-repeat: no-repeat;
         background-position-y: -0vh;
         background-position-x: 40vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
-            display: flex;
-            justify-content: space-between;            
-            img{
-                max-width: 40px;
-            }            
-        }
+       
         .containerIcons{
-            min-width: 28vw;
+            min-width: 33vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 9.8vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             img{
                 max-width: 100px;
+            }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
@@ -40,7 +54,7 @@
            display: flex;
            flex-direction: column;
            min-width: 28vw;
-           margin-top: 2vh;
+           margin-top: 2.2vh;
            margin-left: 5vw;
            
             .Score{
@@ -274,7 +288,7 @@
         background-position: right;
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-y: 19vh;
+        background-position-y: 24vh;
         background-position-x: 48.5vw;
     }
 }
@@ -290,7 +304,7 @@
         background-position: right;
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-y: 19vh;
+        background-position-y: 24vh;
         background-position-x: 48.5vw;
     }
 }
@@ -307,7 +321,7 @@
         background-position: right;
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-y: 19vh;
+        background-position-y: 24vh;
         background-position-x: 48.5vw;
     }
 }
@@ -325,7 +339,7 @@
         background-position: right;
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-y: 19vh;
+        background-position-y: 24vh;
         background-position-x: 48.5vw;
     }
 }
@@ -344,7 +358,7 @@
         background-position: right;
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-y: 19vh;
+        background-position-y: 24vh;
         background-position-x: 48.5vw;
     }
 }

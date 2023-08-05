@@ -185,17 +185,23 @@ const Technologies = () =>{
             {
                 vistaTechnologies == 1 ?
                     <div className="contentTechnologiesReskin">
-                        <div className="hederButtons">
+                        <div className="hederButtons">                           
                             <img src={ArrowLeft} onClick={()=> changeView('Back')}/>
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Reskin1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Reskin
+                                </div>
+                                <div className="subtitle">
+                                    Cámara de colágeno
+                                </div>
+                            </div>
                             <img src={Reskin2} />
                         </div>
                         <div className="containerScores">
                             <div className="Score">
-                                <label></label>
                                 <div>
                                     <label className='price'>$<p>2,200</p></label>
                                     <div className="stars">
@@ -241,12 +247,19 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={SkinGlow1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Skin Glow
+                                </div>
+                                <div className="subtitle">
+                                    Hidrodermoabrasión
+                                </div>
+                            </div>
                             <img src={SkinGlow2} />
                         </div>
                         <div className="containerScores">
                             <div className="Score">
-                                <label>Premium</label>
+                                <label >Premium</label>
                                 <div>
                                     <label className='price'>$<p>3,300</p></label>
                                     <div className="stars">
@@ -308,7 +321,14 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={SkinRenew1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Skin Renew
+                                </div>
+                                <div className="subtitle">
+                                    Luz Oulsada Intensa (IPL)
+                                </div>
+                            </div>
                             <img src={SkinRenew2} />
                         </div>
                         <div className="containerScores">
@@ -327,7 +347,7 @@ const Technologies = () =>{
                                 </div>
                             </div>
                             <div className="Score">
-                                <label>Premium</label>
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>5,500</p></label>
                                     <div className="stars">
@@ -377,7 +397,15 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={diamondCorporal1} style={{minWidth: "390px" }} />
+
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Diamond Lifting Corporal
+                                </div>
+                                <div className="subtitle">
+                                    Radiofrecuencia multipolar
+                                </div>
+                            </div>
                             <img src={diamondCorporal2} />
                         </div>
                         <div className="containerScores">
@@ -428,7 +456,15 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={diamondFacial1} style={{minWidth: "350px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Diamond Lifting Facial
+                                </div>
+                                <div className="subtitle">
+                                    Radiofrecuencia multipolar
+                                </div>
+                            </div>
+                            
                             <img src={diamondFacial2} />
                         </div>
                         <div className="containerScores">
@@ -480,7 +516,14 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Resurfacing1} style={{minWidth: "320px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Luxe Resurfacing
+                                </div>
+                                <div className="subtitle">
+                                    Radiofrecuencia nanofraccional
+                                </div>
+                            </div>
                             <img src={Resurfacing2} />
                         </div>
                         <div className="containerScores">
@@ -531,7 +574,14 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Beginning1} style={{minWidth: "320px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    A new beginning
+                                </div>
+                                <div className="subtitle">
+                            
+                                </div>
+                            </div>
                             <img src={Beginning2} />
                         </div>
                         <div className="containerScores">
@@ -586,7 +636,14 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Ultralift1} style={{maxWidth: "150px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Ultralift
+                                </div>
+                                <div className="subtitle">
+                            
+                                </div>
+                            </div>
                             <img src={Ultralift2} />
                         </div>
                         <div className="containerScores">
@@ -603,7 +660,9 @@ const Technologies = () =>{
                                     </div>
                                     <label className='time'>120 min</label>
                                 </div>
-                                <label>Corporal</label>
+                            </div>
+                            <div className="Score">
+                                <label style={{marginTop:"15px"}}>Corporal</label>
                                 <div>
                                     <label className='price'>$<p>36,000</p></label>
                                     <div className="stars">
@@ -649,7 +708,14 @@ const Technologies = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Dermapen1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                    Dermapen
+                                </div>
+                                <div className="subtitle">
+                            
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">

@@ -196,7 +196,13 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Fisioterapia1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                Valoración Fisioterapéutica
+                                </div>
+                                <div className="subtitle">
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -231,7 +237,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Relax1} />
+                      
+                             <div className="containerTitle">
+                                <div className="title">
+                                Relax & Renew
+                                </div>
+                                <div className="subtitle">
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -249,8 +262,8 @@ const Bodily = () =>{
                                 </div>
                             </div>
 
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -264,8 +277,8 @@ const Bodily = () =>{
                                 </div>
                             </div>
 
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -306,7 +319,15 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Deep1} />
+                 
+                            <div className="containerTitle">
+                                <div className="title">
+                                Deep Tissue Therapy
+                                </div>
+                                <div className="subtitle">
+                                    Masaje descontracturante
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -324,8 +345,8 @@ const Bodily = () =>{
                                 </div>
                             </div>
 
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -339,8 +360,8 @@ const Bodily = () =>{
                                 </div>
                             </div>
 
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -384,7 +405,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={HotStone1} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                Hot Stone Therapy
+                                </div>
+                                <div className="subtitle">
+                                Masaje de piedras calientes
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -401,8 +429,8 @@ const Bodily = () =>{
                                     <label className='time'>30 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -415,8 +443,8 @@ const Bodily = () =>{
                                     <label className='time'>60 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -462,7 +490,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Cupping1} style={{minWidth: "250px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                Cupping Therapy
+                                </div>
+                                <div className="subtitle">
+                                Masaje de ventosas
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                         <div className="Score">
@@ -479,8 +514,8 @@ const Bodily = () =>{
                                     <label className='time'>30 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -493,8 +528,8 @@ const Bodily = () =>{
                                     <label className='time'>60 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -539,8 +574,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Limphatic1} style={{minWidth: "270px" }} />
-                           
+                            <div className="containerTitle">
+                                <div className="title">
+                                Lymphatic Drainage
+                                </div>
+                                <div className="subtitle">
+                                Masaje de drenaje linfático
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -557,8 +598,8 @@ const Bodily = () =>{
                                     <label className='time'>30 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -571,8 +612,8 @@ const Bodily = () =>{
                                     <label className='time'>60 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -631,8 +672,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Cold1} style={{minWidth: "170px" }} />
-                     
+                            <div className="containerTitle">
+                                <div className="title">
+                                Cold Wrap
+                                </div>
+                                <div className="subtitle">
+                                Msaje de vendas frias
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -649,8 +696,8 @@ const Bodily = () =>{
                                     <label className='time'>30 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Medium</label>
+                            <div className="Score Medium">
+                                <label style={{marginTop:"15px"}}>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
                                     <div className="stars">
@@ -663,8 +710,8 @@ const Bodily = () =>{
                                     <label className='time'>60 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
-                                <label>Premium</label>
+                            <div className="Score Premium">
+                                <label style={{marginTop:"15px"}}>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>
                                     <div className="stars">
@@ -707,7 +754,14 @@ const Bodily = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Remodeling1} style={{minWidth: "200px" }} />
+                            <div className="containerTitle">
+                                <div className="title">
+                                Remodeling
+                                </div>
+                                <div className="subtitle">
+                                Masaje de moldeo corporal
+                                </div>
+                            </div>
                         </div>
                         <div className="containerScores">
                             <div className="Score">
@@ -724,7 +778,7 @@ const Bodily = () =>{
                                     <label className='time'>30 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
+                            <div className="Score Medium">
                                 <label>Medium</label>
                                 <div>
                                     <label className='price'>$<p>1,800</p></label>
@@ -738,7 +792,7 @@ const Bodily = () =>{
                                     <label className='time'>60 min</label>
                                 </div>
                             </div>
-                            <div className="Score">
+                            <div className="Score Premium" >
                                 <label>Premium</label>
                                 <div>
                                     <label className='price'>$<p>2,600</p></label>

@@ -3,18 +3,11 @@
 .containerTechnologiesContainer{
     min-width: 90vw;
     min-height: 100vh;
-  
-
     display: flex;
-    flex-direction: column;
-    
-
+    flex-direction: column;    
     min-width: 85vw;
     max-width: 85vw;
-    overflow-x: hidden;
-
-
-    
+    overflow-x: hidden;    
     .contentTechnologies{
         min-width: 90vw;
         min-height:95vh;
@@ -105,10 +98,17 @@
 
 
 
+
+
+
+
+
+
     .contentTechnologiesReskin{
         min-width: 90vw;
         min-height: 100vh;
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -117,37 +117,62 @@
         background-size: 42vw;
         background-repeat: no-repeat;
         background-position-x: 42vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        background-position-y: 2vh;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 5vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             img{
                 max-width: 150px;
+                max-height: 50px;
+            }             
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: row;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2vh;
            margin-left: 5vw;
+           
             .Score{
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: row;
                 label{
                 }
@@ -156,8 +181,7 @@
                     justify-content: flex-start;
                     align-items: center;
                     flex-direction: row;
-                    .price{
-                        
+                    .price{                        
                         font-size: 1.5rem;
                         display: flex;
                         justify-content: flex-start;
@@ -189,7 +213,7 @@
             }
        }  
        .containerParagraph{
-            max-width: 37vw;
+            max-width: 31vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -200,7 +224,7 @@
            margin-top: 5vh;
            padding-left: 5vw;
            padding-top: 6vh;
-           max-width: 37vw;        
+           max-width: 31vw;        
            list-style: none;
            background-image: url('../../../utils/img/fondoLista.png');
            background-size: 35vw;
@@ -251,39 +275,63 @@
         background-position: right;
         background-size: 60vw;
         background-repeat: no-repeat;
-        background-position-y: 7vh;
+        background-position-y: 2vh;
         background-position-x: 24vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
+
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 5vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             img{
-                max-width: 150px;
+                max-width: 140px;
+            }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2.6vh;
            margin-left: 5vw;
-           
             .Score{
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: column;
                 label{
@@ -295,8 +343,10 @@
                     justify-content: flex-start;
                     align-items: center;
                     flex-direction: row;
+                    max-height: 40px;
                     .price{
                         font-size: 1.5rem;
+                        line-height: 1rem;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
@@ -305,6 +355,7 @@
                         font-weight: 500;
                         p{
                             font-size: 1.6rem;
+                            line-height: 1rem;
                         }
                     }
                     .stars{
@@ -322,12 +373,13 @@
                         color: #70706F;
                         font-size: 1.2rem;
                         font-style: oblique;
+                        line-height: 1rem;
                     }
                 }
             }
        }  
        .containerParagraph{
-            max-width: 37vw;
+            max-width: 32vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -335,10 +387,11 @@
             font-family: Avenir;
        }       
        .containerDescriptions{
+          
            margin-top: 5vh;
            padding-left: 5vw;
            padding-top: 6vh;
-           max-width: 35vw;        
+           max-width: 32vw;        
            list-style: none;
            background-image: url('../../../utils/img/fondoLista.png');
            background-size: 35vw;
@@ -390,15 +443,17 @@
         justify-content: flex-start;
         align-items: flex-start;
        
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         
            
@@ -439,39 +494,62 @@
         background-position: right;
         background-size: 95vw;
         background-repeat: no-repeat;
-        background-position-y: -9vh;
+        background-position-y: -14vh;
         background-position-x: -2vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+            }                      
         }
         .containerIcons{
             min-width: 30vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            max-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             img{
-                max-width: 150px;
+                max-width: 120px; 
+            }
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 3vh;
+           margin-top: 3.2vh;
            margin-left: 5vw;
            
             .Score{
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: column;
                 label{
@@ -491,8 +569,10 @@
                         color: #A9625E;
                         font-family: greycliff-cf;
                         font-weight: 500;
+                        line-height: 1rem;
                         p{
                             font-size: 1.6rem;
+                            line-height: 1rem;
                         }
                     }
                     .stars{
@@ -512,6 +592,9 @@
                         font-style: oblique;
                     }
                 }
+            }
+            .Premium{
+                margin-top: 10px;
             }
        }  
        .containerParagraph{
@@ -585,34 +668,59 @@
         background-position: right;
         background-size: 80vw;
         background-repeat: no-repeat;
-        background-position-y: 0vh;
+        background-position-y: -5vh;
         background-position-x: 5vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
-            min-width: 50vw;
+            min-width: 55vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: flex-start;
+
             img{
                 max-width: 150px;
+            }
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 3vh;
+           margin-top: 2.7vh;
            margin-left: 5vw;
            
             .Score{
@@ -637,6 +745,7 @@
                         color: #A9625E;
                         font-family: greycliff-cf;
                         font-weight: 500;
+                        line-height: 1rem;
                         p{
                             font-size: 1.6rem;
                         }
@@ -732,34 +841,58 @@
         background-position: right;
         background-size: 80vw;
         background-repeat: no-repeat;
-        background-position-y: -1vh;
+        background-position-y: -5vh;
         background-position-x: 10vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: flex-start;
             img{
                 max-width: 150px;
+            }
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2.7vh;
            margin-left: 5vw;
            
             .Score{
@@ -784,6 +917,7 @@
                         color: #A9625E;
                         font-family: greycliff-cf;
                         font-weight: 500;
+                        line-height: 1rem;
                         p{
                             font-size: 1.6rem;
                         }
@@ -808,7 +942,7 @@
             }
        }  
        .containerParagraph{
-            max-width: 38vw;
+            max-width: 30vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -819,7 +953,7 @@
            margin-top: 5vh;
            padding-left: 5vw;
            padding-top: 6vh;
-           max-width: 32vw;        
+           max-width: 30vw;        
            list-style: none;
            background-image: url('../../../utils/img/tecnologies/SkinRenew/FondoLista.png');
            background-size: 35vw;
@@ -882,34 +1016,60 @@
         background-position: right;
         background-size: 75vw;
         background-repeat: no-repeat;
-        background-position-y: 5vh;
+        background-position-y: 0vh;
         background-position-x: 10vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
-            justify-content: space-between;            
+            justify-content: space-between;  
+            align-items: flex-end;          
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
-            min-width: 50vw;
+            min-width: 45vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: flex-start;
             img{
                 max-width: 150px;
+            }
+        
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2vh;
            margin-left: 5vw;
            
             .Score{
@@ -1036,34 +1196,59 @@
         background-position: right;
         background-size: 75vw;
         background-repeat: no-repeat;
-        background-position-y: 12vh;
+        background-position-y: 7vh;
         background-position-x: 20vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
             min-width: 50vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: flex-start;
             img{
-                max-width: 150px;
+                max-width: 140px;
+            }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #CBAC45;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #CBAC45;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2vh;
            margin-left: 5vw;
            
             .Score{
@@ -1199,32 +1384,58 @@
         background-repeat: no-repeat;
         background-position-y: 3vh;
         background-position-x: 38vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
             min-width: 38vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+
             img{
                 max-width: 250px;
+            }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2.7vh;
            margin-left: 5vw;
            
             .Score{
@@ -1249,6 +1460,7 @@
                         color: #A9625E;
                         font-family: greycliff-cf;
                         font-weight: 500;
+                        line-height: 1rem;
                         p{
                             font-size: 1.6rem;
                         }
@@ -1270,6 +1482,10 @@
                         font-style: oblique;
                     }
                 }
+            }
+
+            .Premium{
+                margin-top: 10px;
             }
        }  
        .containerParagraph{
@@ -1347,32 +1563,57 @@
         background-repeat: no-repeat;
         background-position-y: -5vh;
         background-position-x: 15vw;
-        .hederButtons{
-            margin-top: 5vh;
-            margin-left: 5vw;
-            min-width: 15vw;
+        .hederButtons{                        
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 70vw;           
+            min-width: 10vw;
             display: flex;
             justify-content: space-between;            
             img{
                 max-width: 40px;
-            }            
+                max-height: 50px;
+            }                      
         }
         .containerIcons{
             min-width: 38vw;
             margin-left: 5vw;
-            margin-top: 3vh;
+            margin-top: 10vh;
+            min-height: 60px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             img{
                 max-width: 180px;
+            }
+
+            .containerTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    font-size: 2.5rem;
+                    color: #894B52;
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 2rem;
+                }
+                .subtitle{
+                    font-family:  "greycliff-cf", sans-serif;
+                    font-weight: 400;
+                    color: #894B52;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
        .containerScores{
            display: flex;
            flex-direction: column;
            min-width: 30vw;
-           margin-top: 5vh;
+           margin-top: 2vh;
            margin-left: 5vw;
            
             .Score{
@@ -1421,7 +1662,7 @@
             }
        }  
        .containerParagraph{
-            max-width: 35vw;
+            max-width: 30vw;
             margin-top: 5vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -1432,8 +1673,8 @@
            margin-top: 5vh;
            padding-left: 5vw;
            padding-top: 6vh;
-           min-width: 40vw;    
-           max-width: 40vw;        
+           min-width: 35vw;    
+           max-width: 35vw;        
            list-style: none;
            background-image: url('../../../utils/img/tecnologies/ultralift/FondoLinea.png');
            background-size: 35vw;
