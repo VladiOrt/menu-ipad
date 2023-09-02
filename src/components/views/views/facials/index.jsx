@@ -2,7 +2,12 @@ import './index.scss'
 import { useState } from 'react'
 
 
+import { Provider } from 'react-redux';
+import store from '../../../../store';
+import Counter from '../../../../counter';
 
+
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 
 const ArrowLeft = require('../../../utils/img/arrow/left.png')
@@ -198,6 +203,16 @@ const Facials = () =>{
                                        {/*  <img src={StarWhite} />  */}
                                     </div>
                                     <label className='time'>40 min</label>
+                                    <div className='IconHeart'>
+                                        <FavoriteBorderIcon />
+                                    </div>
+                                    <Provider store={store}>
+                                        <div className="App">
+                                            <h1>Contador</h1>
+                                            <Counter />
+                                        </div>
+                                    </Provider>
+
                                 </div>
                             </div>
                         </div>
@@ -233,6 +248,9 @@ const Facials = () =>{
                                        {/*  <img src={StarWhite} />  */}
                                     </div>
                                     <label className='time'>60 min</label>
+                                    <div className='IconHeart'>
+                                        <FavoriteBorderIcon />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -282,6 +300,9 @@ const Facials = () =>{
                                 </div>
                                 <label className='time'>60 min</label>
                             </div>
+                            <div className='IconHeart'>
+                                <FavoriteBorderIcon />
+                            </div>
                         </div>
                     </div>
                     <div className="containerParagraph">
@@ -315,6 +336,9 @@ const Facials = () =>{
                                    {/*  <img src={StarWhite} />  */}
                                 </div>
                                 <label className='time'>60 min</label>
+                                <div className='IconHeart'>
+                                    <FavoriteBorderIcon />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -359,6 +383,9 @@ const Facials = () =>{
                                    {/*  <img src={StarWhite} />  */}
                                 </div>
                                 <label className='time'>70 min</label>
+                                <div className='IconHeart'>
+                                    <FavoriteBorderIcon />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -393,6 +420,9 @@ const Facials = () =>{
                                    {/*  <img src={StarWhite} />  */}
                                 </div>
                                 <label className='time'>70 min</label>
+                                <div className='IconHeart'>
+                                    <FavoriteBorderIcon />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,6 +470,9 @@ const Facials = () =>{
                                {/*  <img src={StarWhite} />  */}
                             </div>
                             <label className='time'>70 min</label>
+                            <div className='IconHeart'>
+                                <FavoriteBorderIcon />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -474,6 +507,9 @@ const Facials = () =>{
                                {/*  <img src={StarWhite} />  */}
                             </div>
                             <label className='time'>70 min</label>
+                            <div className='IconHeart'>
+                                <FavoriteBorderIcon />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -521,6 +557,9 @@ const Facials = () =>{
                                        {/*  <img src={StarGold} />  */}
                                     </div>
                                     <label className='time'>120 min</label>
+                                    <div className='IconHeart'>
+                                        <FavoriteBorderIcon />
+                                    </div>
                                 </div>
                             </div>
                         </div>

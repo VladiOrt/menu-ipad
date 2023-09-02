@@ -63,10 +63,10 @@ const Home = () => {
         <div className={"containerHome " +fondo} id="containerHome">
             
             <div className="containerContentHome">
-                <div className="containerContentNav">
+                <div className="containerContentNav"  style={{backgroundColor: (vista==1?"rgba(230,212,212 , 0.2)":"") + (vista==2?"rgb(244,235,243.0.2)":"")+(vista==3?"rgb(228,228,244, 0.2)":"") +(vista==4?"rgba(220,252,244,0.2)":"")+(vista==5?"rgba(244,236,236,0.2)":"") }}>
                     <div className="containerButtonVacio" onClick={()=>handleMenu(0)}></div>
                     <div className="containerButtons">
-                        <a onClick={()=>handleMenu(1)}>
+                        <a onClick={()=>handleMenu(1)}    >
                             {
                                 vista==1 || fondo=='' ?
                                 <img src={Img1} />       

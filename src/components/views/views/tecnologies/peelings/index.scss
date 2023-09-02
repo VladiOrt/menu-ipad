@@ -271,6 +271,47 @@
     }
 
 
+
+    .containerPoints{
+        position: absolute;
+        margin-left: 40vw;
+        margin-top: 15vh;
+        min-width: 40vw;
+        min-height: 40vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        div{
+            position: absolute;
+            min-width: 30px;
+            min-height: 30px;
+        }
+
+        .One{
+            margin-left: 18.8vw;
+            margin-top: 9.8vh;
+        }
+        .Two{
+            margin-left: 18.8vw;
+            margin-top: 20.3vh;
+        }
+        .Three{
+            margin-left: 9vw;
+            margin-top: 30.5vh;
+        }
+        .Four{
+            margin-left: 24.2vw;
+            margin-top: 33.5vh;
+        }
+        .Five{
+            margin-left: 24.2vw;
+            margin-top: 38.5vh;
+        }
+
+
+    }
+
 }
 
 

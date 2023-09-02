@@ -114,6 +114,23 @@ const Peelings = () => {
                         </li>
                     </ul>
                 </div>
+
+
+                {
+                    vista>0?
+                    <div className="containerPoints">
+                        <div className="point One" onClick={()=> handleVista(2)}></div>
+                        <div className="point Two" onClick={()=> handleVista(4)}></div>
+                        <div className="point Three" onClick={()=> handleVista(5)}></div>
+                        <div className="point Four"  onClick={()=> handleVista(3)}></div>
+                        <div className="point Five"  onClick={()=> handleVista(1)}></div>
+                    </div>
+                    :""
+
+                }
+
+             
+
             </div>        
         </div>
     )
