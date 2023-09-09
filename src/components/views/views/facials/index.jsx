@@ -190,6 +190,8 @@ const Facials = () =>{
                                 </div>
                             </div>
                         </div>
+
+
                         <div className="containerScores">
                             <div className="Score">
                                 <label></label>
@@ -206,9 +208,11 @@ const Facials = () =>{
                                     <div className='IconHeart'>
                                         <FavoriteBorderIcon />
                                     </div>
+                    
+
+                                    
                                     <Provider store={store}>
-                                        <div className="App">
-                                            <h1>Contador</h1>
+                                        <div className="App">                                           
                                             <Counter />
                                         </div>
                                     </Provider>

@@ -4,12 +4,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { increment, decrement } from './actions';
 
+
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
+
 function Counter(props) {
   return (
     <div>
       <p>Conteo: {props.count}</p>
-      <button onClick={props.increment}>Incrementar</button>
-      <button onClick={props.decrement}>Decrementar</button>
+      <FavoriteBorderIcon onClick={props.increment}/>
+      <FavoriteBorderIcon onClick={props.decrement}/>
     </div>
   );
 }
