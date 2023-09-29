@@ -1,0 +1,110 @@
+
+
+
+.containerHome{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    
+
+    animation: CambioMenu 2s infinite;
+
+    .filter{
+        animation: CambioVista 2s infinite;
+        position: static;
+        min-width: 100vw;
+        min-height: 80vh;
+        background-color: rgb(116, 116, 116);
+        overflow: hidden;
+    }
+
+    .containerIcons{
+        position: absolute;
+        min-width: 100vw;
+        min-height: 10vh;
+        margin-top: 72.5vh;
+        min-height: 15vh;
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+        
+
+        animation: CambioPosicion 2s infinite;
+
+        .containerHome{
+            border: 1px solid yellow;
+            min-width: 10vw;
+            max-width: 10vw;
+            min-height: 8vh;      
+            display: none; 
+        }
+        .containerIcon{
+            border: 1px solid yellow;
+            min-width: 10vw;
+            max-width: 10vw;
+            min-height: 8vh;            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@keyframes CambioMenu {
+        0%{
+            flex-direction: row;
+            background-color: #000;
+        }
+        100%{
+            background-color: #FFF;
+            flex-direction: row;
+
+        }
+}
+
+@keyframes CambioPosicion {
+        0%{
+        }
+        100%{   
+            position: normal;
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 15vw;
+            min-height: 100vh;
+            margin-right: 85vw;
+            background-color: #000;
+        }
+}
+
+
+@keyframes CambioVista {
+    0%{
+    }
+    100%{   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 85vw;
+        min-height: 100vh;
+    }
+}

@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 
 import './App.scss'
 
-import Home from './components/views/home';
-
+import Home from './routes/index';
+import Wislish from './components/hook/index.tsx'
 
 
 const LoadingIndicator = () => {
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div className='containerGeneral'>
-      {loading ? <LoadingIndicator /> : <Home />}
+      {loading ? <LoadingIndicator /> : <> <Home/> </>}
     </div>
   );
 };

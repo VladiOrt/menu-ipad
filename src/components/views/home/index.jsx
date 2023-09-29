@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
+import Wislish from '../../hook/index.tsx';
 import './index.scss'
 
 import Img1 from '../../utils/img/home/icons/Icon1.png'
@@ -122,7 +124,7 @@ const Home = () => {
                                 Planes de
                                 tratamientos
                             </label>
-                        </a>
+                        </a>                                        
                     </div>            
                 </div>
                 <div className="containerContentViews">
@@ -148,7 +150,7 @@ const Home = () => {
                     }
                     {
                         vista==6?
-                            <div />:<></>
+                        <Wislish product="Total"  />:<></>
                     }
                 </div>                
             </div>

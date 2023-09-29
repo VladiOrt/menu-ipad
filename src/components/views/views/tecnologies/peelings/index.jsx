@@ -1,7 +1,7 @@
 
 import './index.scss'
 
-
+import Wislish from '../../../../hook/index.tsx'
 
 import { useState } from 'react'
 
@@ -68,8 +68,9 @@ const Peelings = () => {
                                 {/* <img src={StarBrown} /> */}
                                {/*  <img src={StarWhite} />  */}
                             </div>
-                            <label className='time'>75 min</label>
+                            <label className='time'>75 min</label>                            
                         </div>
+                        <Wislish product="Smart Peelings" price={3300} />
                     </div>
                 </div>
                 <div className="containerParagraph">

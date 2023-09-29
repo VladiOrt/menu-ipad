@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 import Peelings from './peelings'
 
-
+import Wislish from '../../../hook/index.tsx'
 
 
 
