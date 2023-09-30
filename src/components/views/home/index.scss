@@ -42,19 +42,14 @@
             }
         }
     }
-
-    
 }
 
 
 .Activo{
     background-image: none;
-
-
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-
 
     .containerContentHome{
         display: flex;
@@ -69,7 +64,6 @@
             background-repeat: no-repeat;
             background-size: 15vw;
             background-position-y: -20vh;
-
 
             .containerButtonVacio{
                 min-width: 15vw;
@@ -100,6 +94,4 @@
             }
         }
     }
-
-
 }

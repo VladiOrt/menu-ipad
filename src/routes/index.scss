@@ -1,7 +1,7 @@
 
 
 
-.containerHome{
+.containerHome , .containerHomeactive {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -9,91 +9,98 @@
     min-height: 100vh;
     overflow: hidden;
     background-color: #000;
-    
-
-    animation: CambioMenu 2s infinite;
-
     .filter{
-        animation: CambioVista 2s infinite;
         position: static;
         min-width: 100vw;
         min-height: 80vh;
-        background-color: rgb(116, 116, 116);
         overflow: hidden;
+        background-image: url('../components/utils/img/home/back.png');
+        background-size: cover;
     }
-
     .containerIcons{
         position: absolute;
         min-width: 100vw;
         min-height: 10vh;
         margin-top: 72.5vh;
         min-height: 15vh;
-
         display: flex;
         justify-content: center;
         justify-content: space-around;
-        flex-direction: row;
-
-        
-
-        animation: CambioPosicion 2s infinite;
-
+        flex-direction: row;        
         .containerHome{
-            border: 1px solid yellow;
             min-width: 10vw;
             max-width: 10vw;
             min-height: 8vh;      
             display: none; 
+            justify-content: center;
+            align-items: center;
         }
         .containerIcon{
-            border: 1px solid yellow;
             min-width: 10vw;
             max-width: 10vw;
-            min-height: 8vh;            
+            min-height: 8vh;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                min-width: 10vh;
+                max-width: 10vh;
+            }
         }
     }
+}
 
 
 
 
 
-
-
-
-
-
-
-
+.containerHomeactive { 
+    animation: CambioMenu 1s ;
+    animation-fill-mode: forwards; 
+    .filter{
+        animation: CambioVista 1s ;      
+        animation-fill-mode: forwards; 
+        background-image: none;
+    }
+    .containerIcons{       
+        animation: CambioPosicion 1s ;      
+        animation-fill-mode: forwards; 
+        .containerHome{            
+            display: flex;
+            animation: AparecerIconoInicio 1s ;      
+            animation-fill-mode: forwards; 
+            min-height: 15vh;      
+        }
+    }
 }
 
 
 
 @keyframes CambioMenu {
-        0%{
-            flex-direction: row;
-            background-color: #000;
-        }
-        100%{
-            background-color: #FFF;
-            flex-direction: row;
-
-        }
+    0%{
+        flex-direction: row;
+        background-color: #000;
+    }
+    100%{
+        background-color: #FFF;
+        flex-direction: row;
+    }
 }
 
 @keyframes CambioPosicion {
-        0%{
-        }
-        100%{   
-            position: normal;
-            margin-top: 0;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            min-width: 15vw;
-            min-height: 100vh;
-            margin-right: 85vw;
-            background-color: #000;
-        }
+    0%{
+    }
+    100%{   
+        position: normal;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 10vw;
+        min-height: 100vh;
+        margin-right: 90vw;
+        background-color: #000;
+    }
 }
 
 
@@ -104,7 +111,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 85vw;
+        min-width: 90vw;
         min-height: 100vh;
+    }
+}
+
+@keyframes AparecerIconoInicio {
+    0%{
+       display: none;
+    }
+    100%{
+        display: flex;
     }
 }

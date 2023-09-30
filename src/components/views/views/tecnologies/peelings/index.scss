@@ -9,11 +9,12 @@
         justify-content: flex-start;
         align-items: flex-start;
         background-image: url('../../../../utils//img/tecnologies/peelings/back0.png');
+        background-image: url('../../../../../assets/images/technology/03.png');
         background-position: right;
-        background-size: 50vw;
+        background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -0vh;
-        background-position-x: 40vw;
+        background-position-y: 00vh;
+        background-position-x: 35vw;
        
         .containerIcons{
             min-width: 33vw;
@@ -23,10 +24,13 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            min-width: 30vw;
+            max-width: 30vw;            
             img{
                 max-width: 100px;
             }
 
+        
             .containerTitle{
                 display: flex;
                 flex-direction: column;
@@ -39,6 +43,9 @@
                     font-weight: 500;
                     font-style: normal;
                     line-height: 2rem;
+                    max-width: 20vw;
+                
+                    
                 }
                 .subtitle{
                     font-family:  "greycliff-cf", sans-serif;
@@ -46,7 +53,10 @@
                     color: #894B52;
                     font-size: 1rem;
                     font-style: oblique;
-                }
+                }              
+            }
+            img{
+                margin-left: 0px;
             }
         }
        .containerScores{
@@ -103,7 +113,7 @@
             }
        }  
        .containerParagraph{
-            max-width: 34vw;
+            max-width: 31vw;
             margin-top: 2vh;
             margin-left: 5vw;
             color: #3C3C3C;
@@ -132,8 +142,8 @@
            margin-top: 2vh;
            padding-left: 5vw;
            padding-top: 0vh;
-           min-width: 40vw;    
-           max-width: 40vw;        
+           min-width: 31vw;    
+           max-width: 31vw;        
            list-style: none;
         
            color: #7E7C7C;

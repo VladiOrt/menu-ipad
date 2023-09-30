@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import './App.scss'
 
-import Home from './routes/index';
+import Home from './components/views/home/index';
 import Wislish from './components/hook/index.tsx'
 
 
