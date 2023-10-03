@@ -1,0 +1,46 @@
+
+
+
+.containerButton{    
+    margin-top: 10px;
+    border: none;
+    border: 1px solid #FFF;
+    background-color: #FAFAFA;
+    max-width: 25vw;
+    min-width: 25vw;
+    min-height: 6vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    div{
+        margin-left: 10px;
+        min-width: 30px;
+        min-height: 30px;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        .circleOne{
+            position: absolute;
+            min-width: 30px;
+            min-height: 30px;
+            border-radius: 15px;
+            margin-left: 0px;
+        }
+        .circleTwo{
+            position: absolute;
+            min-width: 15px;
+            min-height: 15px;
+            border-radius: 7.5px;
+            margin-left: 0px;
+        }
+    }
+    label{
+        margin-left: 10px;
+    }
+}

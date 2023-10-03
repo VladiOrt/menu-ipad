@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 
 import './App.scss'
 
-import Home from './components/views/home/index';
+//import Home from './components/views/home/index';
+import Home from './routes/index';
 import Wislish from './components/hook/index.tsx'
 
 
@@ -14,6 +15,8 @@ const LoadingIndicator = () => {
     </div>
   );
 };
+
+
 
 const App = () => {
   const [loading, setLoading] = useState(true);

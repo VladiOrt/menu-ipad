@@ -1,21 +1,21 @@
 
 
 
-.containerHome , .containerHomeactive {
+.containerHome , .containerHomeactive , .containerHomeReturn {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    background-color: #000;
     .filter{
         position: static;
         min-width: 100vw;
         min-height: 80vh;
         overflow: hidden;
         background-image: url('../components/utils/img/home/back.png');
-        background-size: cover;
+        background-size: 120vw;
+        background-position-x: center;
     }
     .containerIcons{
         position: absolute;
@@ -26,30 +26,36 @@
         display: flex;
         justify-content: center;
         justify-content: space-around;
-        flex-direction: row;        
+        flex-direction: row;
         .containerHome{
             min-width: 10vw;
             max-width: 10vw;
-            min-height: 8vh;      
-            display: none; 
+            min-height: 8vh;
+            display: none;
             justify-content: center;
             align-items: center;
+            img{
+                min-width: 10vw;
+                max-width: 10vw;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
         }
         .containerIcon{
             min-width: 10vw;
             max-width: 10vw;
-            min-height: 8vh;    
+            min-height: 8vh;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
-                min-width: 10vh;
-                max-width: 10vh;
+                min-width: 15vh;
+                max-width: 15vh;
+              
             }
         }
     }
 }
-
 
 
 
@@ -71,8 +77,43 @@
             animation-fill-mode: forwards; 
             min-height: 15vh;      
         }
+        .containerIcon{
+            img{
+                animation: CambioIconos 1s;
+                animation-fill-mode: forwards; 
+            }            
+        }
     }
 }
+
+.containerHomeReturn { 
+    animation: CambioMenuReturn 1s ;
+    animation-fill-mode: forwards; 
+    .filter{
+        animation: CambioVistaReturn 1s ;      
+        animation-fill-mode: forwards; 
+        background-image: none;
+    }
+    .containerIcons{       
+        animation: CambioPosicionReturn 1s ;      
+        animation-fill-mode: forwards; 
+        .containerHome{            
+            display: none;
+            animation: AparecerIconoInicioReturn 1s ;      
+            animation-fill-mode: forwards; 
+            min-height: 15vh;               
+        }
+        .containerIcon{
+            img{
+                min-width: 10vh;
+                max-width: 10vh;
+                animation: CambioIconosReturn 1s ;
+                animation-fill-mode: forwards; 
+            }            
+        }
+    }
+}
+
 
 
 
@@ -86,9 +127,29 @@
         flex-direction: row;
     }
 }
-
+@keyframes CambioIconos {
+    0%{
+        min-width: 15vh;
+        max-width: 15vh;
+    }
+    100%{
+        min-width: 10vh;
+        max-width: 10vh;
+    }
+}
 @keyframes CambioPosicion {
     0%{
+    }
+    90%{
+        position: normal;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 15vw;
+        min-height: 100vh;
+        margin-right: 85vw;
+        background-image: none;
     }
     100%{   
         position: normal;
@@ -96,14 +157,16 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        min-width: 10vw;
+        min-width: 15vw;
         min-height: 100vh;
-        margin-right: 90vw;
-        background-color: #000;
+        margin-right: 85vw;
+        background-image: url('../assets/images/home/backLeft.png');
+        background-repeat: no-repeat;
+        background-size: 15vw;
+        background-position-x: center;
+        background-position-y: -4vh;
     }
 }
-
-
 @keyframes CambioVista {
     0%{
     }
@@ -111,11 +174,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 90vw;
+        min-width: 85vw;
         min-height: 100vh;
     }
 }
-
 @keyframes AparecerIconoInicio {
     0%{
        display: none;
@@ -124,3 +186,129 @@
         display: flex;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes CambioMenuReturn {
+    0%{
+        flex-direction: row;
+        background-color: #000;
+    }
+    100%{
+        background-color: #FFF;
+        flex-direction: row;
+    }
+}
+@keyframes CambioIconosReturn {
+    0%{
+        min-width: 10vh;
+        max-width: 10vh;
+    }
+    100%{
+        min-width: 15vh;
+        max-width: 15vh;
+    }
+}
+@keyframes CambioPosicionReturn {
+    0%{
+        position: normal;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 15vw;
+        min-height: 100vh;
+        margin-right: 85vw;
+        background-image: url('../assets/images/home/backLeft.png');
+        background-repeat: no-repeat;
+        background-size: 15vw;
+        background-position-x: center;
+        background-position-y: -4vh;
+    }
+    10%{
+        background-image: none;
+    }
+    100%{   
+        position: normal;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100vw;
+        min-height: 15vh;
+        margin-right: 0vw;
+        margin-top: 72.5vh;
+        background-image: none;
+    }
+}
+@keyframes CambioVistaReturn {
+    0%{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        min-width: 100vw;
+        min-height: 80vh;
+    }
+    100%{   
+        
+        display: flex;
+        position: static;
+        justify-content: center;
+        align-items: center;      
+        background-image: url('../components/utils/img/home/back.png');
+        background-size: 120vw;
+        background-position-x: center;
+        min-width: 100vw;
+        min-height: 80vh;
+    }
+}
+@keyframes AparecerIconoInicioReturn {
+    0%{
+       display: flex;
+    }
+    20%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

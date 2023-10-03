@@ -18,6 +18,8 @@ import Img5Dos from '../components/utils/img/home/icons/Icon5-2.png'
 import IconMenu from '../assets/images/home/IconMenu.png'
 
 
+import ContainerView from '../containers'
+
 const Home = () => {
     const[fondo,setFondo] = useState('containerHome')
     
@@ -25,24 +27,34 @@ const Home = () => {
     
     
 
-    function handleOpenMenu(){
+    function handleOpenMenu(id){
         setFondo('containerHomeactive')
+        setView(id)
+    }
+    function handleCloseMenu(){
+        setFondo('containerHomeReturn')
+        setView('')
     }
 
 
 
-    return(
-        <div className={fondo} id="containerHome">
-                
 
+    return(
+        <div className={fondo} id="containerHome">            
             <div className="filter">
+                
+                {view==1 ? <ContainerView view="Technologies" />:""}
+                {view==2 ? <ContainerView view="Facials" />:""}
+                {view==3 ? <ContainerView view="Body" />:""}
+                {view==4 ? <ContainerView view="Aesthetic" />:""}
+                {view==5 ? <ContainerView view="Plans" />:""}
 
             </div>
             <div className="containerIcons">
-                <div className="containerHome" >
+                <div className="containerHome" onClick={()=> handleCloseMenu()}>
                     <img src={IconMenu} />
                 </div>
-                <div className="containerIcon" onClick={()=> handleOpenMenu()}>                   
+                <div className="containerIcon" onClick={()=> handleOpenMenu(1)}>                   
                     {
                         view == 1 ?
                         <img src={Img1} />
@@ -50,7 +62,7 @@ const Home = () => {
                         <img src={Img1Dos} />
                     }
                 </div>
-                <div className="containerIcon">
+                <div className="containerIcon" onClick={()=> handleOpenMenu(2)}>
                     {
                         view == 2 ?
                         <img src={Img2} />
@@ -58,7 +70,7 @@ const Home = () => {
                         <img src={Img2Dos} />
                     }
                 </div>
-                <div className="containerIcon">
+                <div className="containerIcon" onClick={()=> handleOpenMenu(3)}>
                     {
                         view == 3 ?
                         <img src={Img3} />
@@ -66,7 +78,7 @@ const Home = () => {
                         <img src={Img3Dos} />
                     }
                 </div>
-                <div className="containerIcon">
+                <div className="containerIcon" onClick={()=> handleOpenMenu(4)}>
                     {
                         view == 4 ?
                         <img src={Img4} />
@@ -74,9 +86,9 @@ const Home = () => {
                         <img src={Img4Dos} />
                     }
                 </div>
-                <div className="containerIcon">
+                <div className="containerIcon" onClick={()=> handleOpenMenu(5)}>
                     {
-                        view == 1 ?
+                        view == 5 ?
                         <img src={Img5} />
                         :
                         <img src={Img5Dos} />

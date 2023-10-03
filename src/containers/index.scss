@@ -1,0 +1,81 @@
+.containerView{
+
+
+    display: flex;
+    flex-direction: column;
+    min-width: 85vw;
+    max-width: 85vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+ 
+    
+    .descriptionView{
+        margin-top: 5vh;
+        margin-left: 2vw;
+        min-width: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        
+        label{
+            margin-left: 2vw;
+            font-size: 2.5rem;
+            min-height: 3vh;
+            color: #A9625E;
+            font-family: "greycliff-cf", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        p{
+
+            margin-top: 1vh;
+            margin-left: 2vw;
+            min-height: 5vh;
+            max-width: 52vw;
+            font-size: 0.9rem;
+            color: #3C3C3C;
+            font-family: Avenir;
+            font-style: oblique;
+        }
+
+    }
+
+
+    .Buttons{
+        margin-top: 3vh;
+        min-width: 30vw;
+        margin-left: 4vw;
+    }
+}
+
+
+.Technologies{
+    background-image: url('../assets/images/technology/portada.png');
+    background-size: 100vw;
+    background-position: center;
+}
+.Facials{
+    background-image: url('../assets/images/facials/portada.png');
+    background-size: 100vw;
+    background-position: center;
+}
+.Body{
+    background-image: url('../assets/images/body/portada.png');
+    background-size: 100vw;
+    background-position: center;
+}
+.Aesthetic{
+    background-image: url('../assets/images/aestethic/portada.png');
+    background-size: 100vw;
+    background-position: center;
+}
+.Plans{
+    
+}
+
