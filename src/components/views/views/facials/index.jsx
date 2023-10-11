@@ -2,6 +2,8 @@ import './index.scss'
 import { useState } from 'react'
 
 
+import datos from '../../../utils/datos.json';
+
 
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
@@ -49,11 +51,15 @@ const diamondFacial2 = require('../../../utils/img/tecnologies/diamondFacial/Ico
 
 
 
+
+
+
 const Facials = () =>{
 
     const[vistaTechnologies,setVistaTechnologies] =useState(0)
 
 
+    const [nuevosNombres, setNuevosNombres] = useState(datos);
 
 
 
@@ -84,6 +90,7 @@ const Facials = () =>{
     }
 
 
+    console.log("---Nombres" , nuevosNombres)
 
 
 
@@ -96,6 +103,7 @@ const Facials = () =>{
                         <label>
                             Faciales
                         </label>
+                      
                         <p>
                             Nuestros tratamientos faciales son diseñados pensando en cada tipo de piel, nuestras terapeutas altamente calificadas analizarán tu piel y te ofrecerán un tratamiento personalizado para cumplir con tus necesidades.
                         </p>

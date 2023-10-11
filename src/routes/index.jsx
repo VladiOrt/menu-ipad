@@ -41,14 +41,12 @@ const Home = () => {
 
     return(
         <div className={fondo} id="containerHome">            
-            <div className="filter">
-                
+            <div className="filter">                
                 {view==1 ? <ContainerView view="Technologies" />:""}
                 {view==2 ? <ContainerView view="Facials" />:""}
                 {view==3 ? <ContainerView view="Body" />:""}
                 {view==4 ? <ContainerView view="Aesthetic" />:""}
                 {view==5 ? <ContainerView view="Plans" />:""}
-
             </div>
             <div className="containerIcons">
                 <div className="containerHome" onClick={()=> handleCloseMenu()}>

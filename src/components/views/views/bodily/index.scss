@@ -110,9 +110,9 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/fisioterapia/background.png');
+        background-image: url('../../../../assets/images/body/01.png');
         background-position: right;
-        background-size: 50vw;
+        background-size: 55vw;
         background-repeat: no-repeat;
         background-position-y: 0vh;
         background-position-x: 35vw;
@@ -219,10 +219,11 @@
             color: #3C3C3C;
             font-size: 1rem;
             font-family: Avenir;
-            background-image: url('../../../utils/img/bodily/fisioterapia/FondoLinea.png');
+            background-image: url('../../../../assets/images/body/02.png');
             background-repeat: no-repeat;
             
             background-size: 2.5vw;
+            background-image: none;
        }                   
     }
 
@@ -240,9 +241,9 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils/img/bodily/relax/background.png');
+        background-image: url('../../../../assets/images/body/02.png');
         background-position: right;
-        background-size: 50vw;
+        background-size: 55vw;
         background-repeat: no-repeat;
         background-position-y: 0vh;
         background-position-x: 35vw;
@@ -367,7 +368,7 @@
            padding-top: 5vh;
            max-width: 28vw;        
            list-style: none;
-           background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
+           background-image: url('../../../../assets/images/body/04.png');
            background-repeat: no-repeat;
            background-position: left;
 
@@ -375,6 +376,7 @@
            background-position-x: 0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -419,9 +421,9 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils/img/bodily/Deep/Background.png');
+        background-image: url('../../../../assets/images/body/03.png');
         background-position: right;
-        background-size: 50vw;
+        background-size: 55vw;
         background-repeat: no-repeat;
         background-position-y: 0vh;
         background-position-x: 35vw;
@@ -548,7 +550,7 @@
            padding-top: 5vh;
            max-width: 28vw;        
            list-style: none;
-           background-image: url('../../../utils/img/bodily/relax/FondoLinea.png');
+           background-image: url('../../../../assets/images/body/06.png');
            background-repeat: no-repeat;
            background-position: left;
 
@@ -556,6 +558,7 @@
            background-position-x: 0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -613,11 +616,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/HotStone/background.png');
+        background-image: url('../../../../assets/images/body/04.png');
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -5vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
         .hederButtons{                        
             position: absolute;
@@ -746,6 +749,7 @@
            background-position-x: -0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -794,11 +798,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/cupping/background.png');
+        background-image: url('../../../../assets/images/body/05.png');
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -5vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
         .hederButtons{                        
             position: absolute;
@@ -926,6 +930,7 @@
            background-position-y: 1vh;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -975,12 +980,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/limphatic/background.png');
+        background-image: url('../../../../assets/images/body/06.png');
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -5vh;
-        background-position-x: 32vw;
+        background-position-y: 0vh;
+        background-position-x: 35vw;
         .hederButtons{                        
             position: absolute;
             margin-top: 90vh;
@@ -1106,6 +1111,7 @@
            background-position-x: 0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -1158,11 +1164,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/cold/background.png');
+        background-image: url('../../../../assets/images/body/07.png');
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -5vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
         .hederButtons{                        
             position: absolute;
@@ -1291,6 +1297,7 @@
            background-position-x: 0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;
@@ -1344,11 +1351,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils//img/bodily/remodeling/background.png');
+        background-image: url('../../../../assets/images/body/08.png');
         background-position: right;
         background-size: 55vw;
         background-repeat: no-repeat;
-        background-position-y: -5vh;
+        background-position-y: 0vh;
         background-position-x: 35vw;
         .hederButtons{                        
             position: absolute;
@@ -1473,6 +1480,7 @@
            background-position-x: 0vw;
            background-repeat: no-repeat;
            color: #7E7C7C;
+           background-image: none;
            ul{
                list-style: none;
                color: #7E7C7C;

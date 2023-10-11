@@ -149,7 +149,7 @@ const ContainerView = (props) =>{
     return(
         <div className={"containerView " + view} >       
             <section className={"descriptionView"} >
-                <label>
+                <label style={{color: Color[content]}}>
                     {view == 'Technologies'? Title[content]:""}    
                     {view == 'Facials'? Title[content]:""}    
                     {view == 'Body'? Title[content]:""}    
@@ -166,12 +166,30 @@ const ContainerView = (props) =>{
             </section>
             <section className="Buttons">
             {
-               buttonsActive.map(element =>
-                   <Button name={element} Color={Color[content]} ></Button>
-               )
+                buttonsActive.map(element =>
+                   <Button name={element} Color={Color[content]} />
+                )
             }  
               
             </section>
+
+            <div className="containerInformationContent">
+
+
+
+
+
+                <div className="buttonsControls">
+                    <div className="buttonBack">
+
+                    </div>
+                    <div className="buttonNext">
+
+                    </div>
+                </div>
+            </div>
+
+            
 
         </div>
     )

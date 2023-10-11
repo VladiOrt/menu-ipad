@@ -3,6 +3,9 @@ import { useState } from 'react'
 
 
 
+import {MyContextProvider} from '../../../context/context'
+import ShopCart from '../../../context/shopcart'
+
 
 
 
@@ -118,6 +121,9 @@ const Bodily = () =>{
                         <label>
                             Corporales
                         </label>
+                        <MyContextProvider>
+                          <ShopCart />
+                        </MyContextProvider>
                         <p>
                             Creamos una experiencia de relajación absoluta con elementos que liberan la tensión de tu cuerpo, explorando distintas sensaciones a través de tus sentidos.
                             Tiempo por tratamiento: 30 minutos, 60 minutos o 90 minutos.

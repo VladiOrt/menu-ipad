@@ -11,6 +11,15 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+
+    .containerInformationContent{
+        display: flex;
+        min-width: 85vw;
+        min-height: 100vh;
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        overflow: hidden;
+    }
  
     
     .descriptionView{
@@ -58,22 +67,26 @@
 .Technologies{
     background-image: url('../assets/images/technology/portada.png');
     background-size: 100vw;
-    background-position: center;
+    background-position: right;
+    background-position-x: -2.5vw;
 }
 .Facials{
     background-image: url('../assets/images/facials/portada.png');
-    background-size: 100vw;
-    background-position: center;
+    background-size: 90vw;
+    background-position: right;
+    background-position-y: -0vh;
 }
 .Body{
     background-image: url('../assets/images/body/portada.png');
-    background-size: 100vw;
-    background-position: center;
+    background-size: 90vw;
+    background-position: right;
+    background-position-y: -0vh;
 }
 .Aesthetic{
     background-image: url('../assets/images/aestethic/portada.png');
-    background-size: 100vw;
-    background-position: center;
+    background-size: 90vw;
+    background-position: right;
+    background-position-y: -0vh;
 }
 .Plans{
     
