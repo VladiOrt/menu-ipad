@@ -32,7 +32,7 @@ const ContainerView = (props) =>{
             'Smart Peelings',
             'Skin Renew',
             'Diamond Lifting Corporal',
-            'Diamond Lifting Facial',
+            'Diamond Lifting',
             'Luxe Resurfacing',
             'A New Beginning',
             'Ultralift',

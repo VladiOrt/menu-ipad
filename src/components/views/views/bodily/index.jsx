@@ -120,10 +120,7 @@ const Bodily = () =>{
                     <div className="contentTechnologies">
                         <label>
                             Corporales
-                        </label>
-                        <MyContextProvider>
-                          <ShopCart />
-                        </MyContextProvider>
+                        </label>               
                         <p>
                             Creamos una experiencia de relajación absoluta con elementos que liberan la tensión de tu cuerpo, explorando distintas sensaciones a través de tus sentidos.
                             Tiempo por tratamiento: 30 minutos, 60 minutos o 90 minutos.
@@ -133,13 +130,14 @@ const Bodily = () =>{
                         </p>
                         <nav>
                             <ul>
+                                {/*}
                                 <li onClick={()=>handleViewTecnologies(1)}>
                                     <div className="circle"></div>
                                     <label>
                                         Valoración Fisiotera-péutica
                                     </label>
                                 </li>
-
+                                */}
                                 <li onClick={()=>handleViewTecnologies(2)}>
                                     <div className="circle"></div>
                                     <label>
@@ -170,12 +168,14 @@ const Bodily = () =>{
                                         Lymphatic Drainage
                                     </label>
                                 </li>
+                                {/*
                                 <li onClick={()=>handleViewTecnologies(7)}>
                                     <div className="circle"></div>
                                     <label>
                                         Cold Wrap
                                     </label>
                                 </li>
+                                */}
                                 <li onClick={()=>handleViewTecnologies(8)}>
                                     <div className="circle"></div>
                                     <label>

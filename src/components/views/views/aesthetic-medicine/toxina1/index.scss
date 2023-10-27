@@ -16,62 +16,60 @@
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
-        background-size: 60px;
-        font-size: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        background-size: 50px;
+        font-size: 25px;
+        min-width: 30px;
+        min-height: 30px;
     }
    
     .One{
         margin-top: 25vh;
-        margin-left: 17.2vw;
+        margin-left: 17.7vw;
     }
     .Two{
-        margin-top: 32vh;
-        margin-left: 17.2vw;
+        margin-top: 33vh;
+        margin-left: 17.7vw;
     }
 
     .Three{
-        margin-top: 30.5vh;
+        margin-top: 31.5vh;
         margin-left: 9.5vw;
     }
     .Four{
-        margin-top: 36vh;
-        margin-left: 27vw;
+        margin-top: 37.5vh;
+        margin-left: 27.5vw;
     }
     .Five{
-        margin-top: 45vh;
-        margin-left: 17vw;
+        margin-top: 46vh;
+        margin-left: 17.5vw;
     }
     .Six{
         margin-top: 48vh;
         margin-left: 12vw;
     }
-
-
     .Seven{
-        margin-top: 51vh;
-        margin-left: 20vw;
+        margin-top: 51.8vh;
+        margin-left: 21vw;
     }
     
     .Eight{
-        margin-top: 52vh;
-        margin-left: 17vw;
+        margin-top: 53vh;
+        margin-left: 17.5vw;
     }
     
     .Nine{
-        margin-top: 54vh;
+        margin-top: 54.5vh;
         margin-left: 14vw;
     }
     
     .Ten{
-        margin-top: 63.8vh;
-        margin-left: 17.2vw;
+        margin-top: 64.5vh;
+        margin-left: 17.5vw;
     }
 
     .Eleven{
         margin-top:  73.5vh;
-        margin-left: 17.2vw;
+        margin-left: 17.5vw;
     }
 
 
@@ -83,8 +81,8 @@
         align-items: center;
        
        div{
-            min-width: 30px;
-            min-height: 30px;
+            min-width: 25px;
+            min-height: 25px;
             border: 1px solid #00B89E;
             border-radius: 15px;
             display: flex;
@@ -92,8 +90,8 @@
             align-items: center;
             div{
                 border-radius: 15px;              
-                min-width: 26px;
-                min-height: 26px;
+                min-width: 22px;
+                min-height: 22px;
                 border: 1px solid #00B89E;                
             }
        } 
@@ -104,24 +102,25 @@
     .text{
         border: 1px solid #00B89E;
         position: absolute;
-        min-width: 180px;
-        max-width: 180px;
-        min-height: 80px;
+        min-width: 220px;
+        max-width: 220px;
+        min-height: 20px;                
         margin-top: 70vh;
-        margin-left: 23vw;
+        margin-left: 21.5vw;
         border-radius: 10px;
-
-
-            background-color: rgba(255,255,255,0.5);
-
+        background-color: rgba(255,255,255,0.8);
+        padding-bottom: 10px;
+        padding-right: 5px;
         div{
             margin-top: 10px;
             margin-left: 10px;
             label{
                 color: #00B89E;
+                font-size: 0.9rem;
             }
             p{
                 color: #6A6A6A;
+                font-size: 0.8rem;
             }
         
         }
@@ -129,15 +128,15 @@
 
 
     .circleClose{
-        margin-left: 36.5vw;
-        margin-top: 66.5vh;
+        margin-left: 39vw;
+        margin-top: 67.3vh;
         position: absolute;
         min-width: 40px;
         max-width: 40px;
         min-height: 40px;
         
         background-image: url('../../../../utils/img/aesthetic/toxina/circleClose.png');
-        background-size: 50px;
+        background-size: 40px;
 
     }
 

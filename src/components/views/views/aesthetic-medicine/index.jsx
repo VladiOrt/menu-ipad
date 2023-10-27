@@ -1,5 +1,5 @@
 import './index.scss'
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
 
 
 import PuntosToxina1 from './toxina1'
@@ -18,7 +18,6 @@ import Bioestimuladores2 from './bioestimuladores2'
 import ENZIMAS1 from './enzimas1'
 import ENZIMAS2 from './enzimas2'
 import ENZIMAS3 from './enzimas3'
-
 
 
 
@@ -65,7 +64,7 @@ const AcidoHialuronico1 = require('../../../utils/img/aesthetic/fillers/Icon2.pn
 
 
 
-const Aesthetic = () =>{
+const Aesthetic = (props) =>{
 
     const[vistaTechnologies,setVistaTechnologies] =useState(0)
 
@@ -154,6 +153,12 @@ const Aesthetic = () =>{
 
 
  
+
+        useLayoutEffect(() => {
+            if(props.container =='Exosomas'){
+                handleViewTecnologies(4)
+            }
+        }, [])
 
 
 
@@ -267,6 +272,7 @@ const Aesthetic = () =>{
 
 
                         <div className="containerOpcions">
+                            {/*
                             <div>
                                 <label>
                                     Baby
@@ -294,11 +300,12 @@ const Aesthetic = () =>{
                                 </label>
                                 <p>Hasta 30 a 35 unidades / A partir de los 20 años.</p>
                             </div>    
+                            */}
                         </div>         
 
 
                         <div className="containerButtons">
-                            <div onClick={() => setVistaToxina('ToxinaUno') }>
+                            <div onClick={() => setVistaToxina('ToxinaUno') } >
                                 Facial
                             </div>
                             <div onClick={() => setVistaToxina('ToxinaDos') }>
@@ -508,12 +515,14 @@ const Aesthetic = () =>{
                             { 
                                 vistaFillers==''?
                                 <div>
+                                    {/*
                                     <label>
                                         Efecto lifting
                                         <p>
                                         </p>
                                     </label>
                                     <p>Armonización facial y perfilamiento, a partir de los 30 años</p>
+                                    */}
                                 </div>    
                                 :""
                             }
@@ -728,7 +737,7 @@ const Aesthetic = () =>{
                         <div className="containerScores">
                             <div className="Score">                        
                                 <div>
-                                    <label className='price'>Desde $<p>5,000</p></label>                                                                      
+                                    <label className='price'>1er generación Desde $<p>5,000</p></label>    
                                 </div>
                                 <div>
                                     <label className='price'>2da generación Desde $<p>10,000</p></label>                                                                      
@@ -748,7 +757,7 @@ const Aesthetic = () =>{
                             {
                                 vistaEnzimas=='EnzimasDos'?
                                     <p>
-                                        IRenueva las fibras de colágeno y estimula su regeneración promoviendo así la renovación de la estructura facial o corporal con potente efecto.
+                                        Renueva las fibras de colágeno y estimula su regeneración promoviendo así la renovación de la estructura facial o corporal con potente efecto.
                                         <br /><br />
                                         Mejora la textura, flexibilidad y toxicidad de la piel.
                                     </p>:
@@ -882,9 +891,7 @@ const Aesthetic = () =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-                            <img src={Exoxomas1} style={{maxWidth:"180px"}} />
-
-                           
+                            <img src={Exoxomas1} style={{maxWidth:"180px"}} />                           
                         </div>
                         <div className="containerScores">
                             <img src={Exoxomas2} style={{maxWidth:"100px"}}  />
@@ -899,7 +906,7 @@ const Aesthetic = () =>{
                                 Son regeneradores de doble acción (intensa) formulado para absorberse rápidamente dentro de la piel. Se regenera la piel otorgando rejuvenecimiento manteniendo la firmeza y elasticidad de la piel.
                                 <br/>
                                 <br/>
-                                Tratamiento en conjunto con tecnología nanofraccional (Luxe resurfacing)
+                                Tratamiento en conjunto con la tecnología de radiofrecuencia nanofraccional (Luxe resurfacing), dermapen o nanopore.
                             </p>                            
                         </div>
 
@@ -910,17 +917,13 @@ const Aesthetic = () =>{
                                 <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                         
                             </ul>
                         </div>         
-
-
-
             
-
                         <div className="containerButtons">
                             <div onClick={() => handleVistaFillers('FillersUno') }>
-                            Ácido Hialurónico
+                            Luxe Resurfacing
                             </div>
                             <div onClick={() => handleVistaFillers('FillersDos') }>
-                            Revitalizadores
+                            Dermapen
                             </div>
                       
                         </div>                        

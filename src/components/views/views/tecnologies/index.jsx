@@ -119,7 +119,7 @@ const Technologies = () =>{
                                 <li onClick={()=>handleViewTecnologies(2)}>
                                     <div className="circle"></div>
                                     <label>
-                                        Skin-Glow
+                                        Skin Glow
                                     </label>
                                 </li>                        
                                 <li onClick={()=>handleViewTecnologies(3)}>
@@ -143,7 +143,7 @@ const Technologies = () =>{
                                 <li onClick={()=>handleViewTecnologies(6)}>
                                     <div className="circle"></div>
                                     <label>
-                                        Diamond Lifting Facial
+                                        Diamond Lifting
                                     </label>
                                 </li>
                                 <li onClick={()=>handleViewTecnologies(7)}>
@@ -158,18 +158,19 @@ const Technologies = () =>{
                                         A New Beginning
                                     </label>
                                 </li>
+                                <li onClick={()=>handleViewTecnologies(10)}>
+                                    <div className="circle"></div>
+                                    <label>
+                                        Dermapen + Exosomas
+                                    </label>
+                                </li>
                                 <li onClick={()=>handleViewTecnologies(9)}>
                                     <div className="circle"></div>
                                     <label>
                                         Ultralift
                                     </label>
                                 </li>
-                                <li onClick={()=>handleViewTecnologies(10)}>
-                                    <div className="circle"></div>
-                                    <label>
-                                        Dermapen
-                                    </label>
-                                </li>
+                               
                             </ul>
                         </nav>
                     </div>
@@ -410,7 +411,7 @@ const Technologies = () =>{
                         </div>
                         <div className="containerScores">
                             <div className="Score">
-                                <label>Focalizado</label>
+                                <label></label>
                                 <div>
                                     <label className='price'>$<p>4,000</p></label>
                                     <div className="stars">
@@ -458,7 +459,7 @@ const Technologies = () =>{
                         <div className="containerIcons">
                             <div className="containerTitle">
                                 <div className="title">
-                                    Diamond Lifting Facial
+                                    Diamond Lifting 
                                 </div>
                                 <div className="subtitle">
                                     Radiofrecuencia multipolar
@@ -468,6 +469,20 @@ const Technologies = () =>{
                             <img src={diamondFacial2} />
                         </div>
                         <div className="containerScores">
+                            <div className="Score">
+                                <label>Focalizado</label>
+                                <div>
+                                    <label className='price'>$<p>4,000</p></label>
+                                    <div className="stars">
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                       {/*  <img src={StarWhite} />  */}
+                                    </div>
+                                    <label className='time'>90 min</label>
+                                </div>
+                            </div>
                             <div className="Score">
                                 <label>Premium</label>
                                 <div>
@@ -482,6 +497,7 @@ const Technologies = () =>{
                                     <label className='time'>90 min</label>
                                 </div>
                             </div>
+                           
                         </div>
                         <div className="containerParagraph">
                             <p>
@@ -541,6 +557,20 @@ const Technologies = () =>{
                                     <label className='time'>75 min</label>
                                 </div>
                             </div>
+                            <div className="Score">
+                                <label>Con exosomas</label>
+                                <div>
+                                    <label className='price'>$<p>18,000</p></label>
+                                    <div className="stars">
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                        {/* <img src={StarBrown} /> */}
+                                       {/*  <img src={StarWhite} />  */}
+                                    </div>
+                                    <label className='time'>90 min</label>
+                                </div>
+                            </div>
                         </div>
                         <div className="containerParagraph">
                             <p>
@@ -557,6 +587,12 @@ const Technologies = () =>{
                                 <li><div /><p>Promueve la elasticidad en la piel generando un aspecto más firme</p></li>
                                 <li><div /><p>Disminuye la pigmentación en diferentestipos de piel</p></li>                                                             
                             </ul>
+                        </div>
+
+                        <div className="containerButtons">
+                            <div>
+                                Exosomas
+                            </div>                                                    
                         </div>
                     </div>
                     :<></>
@@ -599,6 +635,20 @@ const Technologies = () =>{
                                     <label className='time'>160 min</label>
                                 </div>
                             </div>
+                            <div className="Score">
+                                <label>Con exosomas</label>
+                                <div>
+                                    <label className='price'>$<p>22,000</p></label>
+                                    <div className="stars">
+                                       {/*  <img src={StarGold} />  */}
+                                       {/*  <img src={StarGold} />  */}
+                                       {/*  <img src={StarGold} />  */}
+                                       {/*  <img src={StarGold} />  */}
+                                       {/*  <img src={StarGold} />  */}
+                                    </div>
+                                    <label className='time'>160 min</label>
+                                </div>
+                            </div>
                         </div>
                         <div className="containerParagraph">
                             <p>
@@ -611,8 +661,7 @@ const Technologies = () =>{
 
                         <div className="containerDescriptions">
                             <ul className="ul">
-                                <li><div /><p>Estimula la producción de colágeno y elastina </p></li>
-                               
+                                <li><div /><p>Estimula la producción de colágeno y elastina </p></li>                               
                                 <li><div /><p>Auxiliar en el tratamiento del acné, marcas y cicatrices</p></li>    
                                 <li><div /><p>Regula el padecimiento de rosácea, dermatitis y zonas enrojecidas</p></li>    
                                 <li><div /><p>Desvanece venas rojizas (arañas vasculares)</p></li>    
@@ -620,6 +669,11 @@ const Technologies = () =>{
                                 <li><div /><p>Previene arrugas y líneas de expresión</p></li>    
                                 <li><div /><p>Minimiza la apariencia de poro dilatados</p></li>    
                             </ul>
+                        </div>
+                        <div className="containerButtons">
+                            <div>
+                                Exosomas
+                            </div>                                                    
                         </div>
                     </div>
                     :<></>
@@ -693,6 +747,7 @@ const Technologies = () =>{
                                 <li><div /><p>Reafirma tu piel</p></li>
                             </ul>
                         </div>
+                     
                     </div>
                     :<></>
             }
@@ -710,7 +765,9 @@ const Technologies = () =>{
                         <div className="containerIcons">
                             <div className="containerTitle">
                                 <div className="title">
-                                    Dermapen
+                                    Dermapen 
+                                    <br />
+                                    + Exosomas
                                 </div>
                                 <div className="subtitle">
                             
@@ -735,9 +792,9 @@ const Technologies = () =>{
                         </div>
                         <div className="containerParagraph">
                             <p>
-                            Este procedimiento médico está indicado para realizarse en la zona de papada, contorno de ojos, pómulos, adiposidad corporal, celulitis, entre otras. 
+                            Procedimiento que efectúa micropunciones en la piel, generando colágeno y elastina, que sirve para reafirmar y rejuvenecer la piel, reducir pigmentaciones moderadas y disminuir cicatrices.
                             <br /><br />
-                            Reafirma, eliminar fibrosis o pequeñas cantidades de grasa. Se utilizan para casos de flacidez (tercio inferior de la cara donde se observan las mejillas y el cuello con aspecto caído; papada; en abdomen; fibrosis posterior a una cicatriz postoperatoria; grasa localizada; disminución de celulitis; piernas y brazos).
+                            A través de este procedimiento se consigue que la piel aumente la absorción de los productos aplicados de forma inmediata, además de que en combinación con productos como los EXOSOMAS se obtienen mejores resultados y más duraderos.
                             </p>
                         </div>
 
