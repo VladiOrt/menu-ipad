@@ -109,7 +109,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils/img/aesthetic/toxina/Back0.png');
+        background-image: url('../../../../assets/images/aestethic/body-two.png');
         background-position: right;
         background-size: 52vw;
         background-repeat: no-repeat;
@@ -226,7 +226,7 @@
             padding-top: 3vh;
             max-width: 30vw;        
             list-style: none;
-            background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
+            //background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
             background-repeat: no-repeat;
             background-position: left;
             background-size: 2.50vw;
@@ -296,9 +296,23 @@
                 border-radius: 5px;
                 font-family: avenir;
             }
+            .Relleno{
+                border: none;
+                color: #FFF;
+                font-weight: 600;
+                background-color: #00B89E;
+            }
         }
           
-
+        .containerLogoCofepris{
+            max-width: 20vw;
+            position: absolute;
+            margin-top: 90vh;
+            margin-left: 35vw;
+            img{
+                max-width: 20vw;
+            }
+        }
 
     }
     
@@ -353,7 +367,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background-image: url('../../../utils/img/aesthetic/toxina/Back2.png');
+        background-image: url('../../../../assets/images/aestethic/body-two.png');
         background-position: right;
         background-size: 52vw;
         background-repeat: no-repeat;
@@ -595,7 +609,7 @@
         padding-top: 3vh;
         max-width: 30vw;        
         list-style: none;
-        background-image: url('../../../utils/img/aesthetic/fillers/FondoLinea.png');
+        //background-image: url('../../../utils/img/aesthetic/fillers/FondoLinea.png');
         background-size: 40vw;
         background-repeat: no-repeat;
         background-position-y: -0px;
@@ -807,24 +821,30 @@
                     .buttonFive{
                         border: none;
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1.png');
-                        background-size: 50px;
+                        background-size: 40px;
                         background-position: center;
                         background-repeat: no-repeat;
                     }
                     .buttonFiveActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1-2.png');
                         background-size: cover;
+                        background-size: 40px;
+                        background-repeat: no-repeat;
                         border: none;
                     }
 
                     .buttonSix{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2.png');
                         background-size: cover;
+                        background-size: 40px;
+                        background-repeat: no-repeat;
                         border: none;
                     }
                     .buttonSixActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2-2.png');
                         background-size: cover;
+                        background-size: 40px;
+                        background-repeat: no-repeat;
                         border: none;
                     }
 
@@ -832,8 +852,11 @@
                 }
                 .contentText , .contentTextRevitalizadores, .contentTextBio {
                     border: none;
-                    min-width: 17vw;
+                    min-width: 14vw;
+                    max-width: 14vw;
                     margin-left: 2vw;
+                    font-size: 0.9rem;
+                    text-align: left;
 
                 }
                 .contentTextBio{
@@ -851,25 +874,25 @@
                 background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Fondo1.png');
                 background-repeat: no-repeat;
                 background-position: left;               
-                background-position-x: 0vw;
+                background-position-x: 1vw;
                 background-position-y: 6vh;
-                background-size: 3vw;
+                background-size: 2vw;
             }
             .containerContentButtonsTwo{
                 background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Fondo2.png');
                 background-repeat: no-repeat;
                 background-position: left;               
-                background-position-x: 0vw;
+                background-position-x: 1.5vw;
                 background-position-y: 6vh;
-                background-size: 8.5vw;
+                background-size: 7vw;
             }
             .containerContentButtonsThree{
                 background-image: url('../../../utils/img/aesthetic/fillers/AcidoHialuronico/Fondo3.png');
                 background-repeat: no-repeat;
                 background-position: left;               
-                background-position-x: 0vw;
+                background-position-x: 2vw;
                 background-position-y: 6vh;
-                background-size: 14.2vw;
+                background-size: 12vw;
             }
 
 
@@ -924,8 +947,17 @@
         .active{
             background-color: #E3E3E3;
         }
+       
     }
-
+    .containerLogoCofepris{
+        max-width: 20vw;
+        position: absolute;
+        margin-top: 90vh;
+        margin-left: 35vw;
+        img{
+            max-width: 20vw;
+        }
+    }
 
 }
 
@@ -1097,7 +1129,7 @@
         padding-top: 3vh;
         max-width: 30vw;        
         list-style: none;
-        background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
+        //background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
         background-repeat: no-repeat;
         background-position: left;
         background-size: 2.50vw;
@@ -1160,6 +1192,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+       
         div{
         
             margin-top: 0px;
@@ -1214,6 +1247,8 @@
             }
 
         }
+      
+        
     }    
 
 
@@ -1406,7 +1441,7 @@
         padding-top: 3vh;
         max-width: 30vw;        
         list-style: none;
-        background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
+        //background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
         background-repeat: no-repeat;
         background-position: left;
         background-size: 2.50vw;
@@ -1484,6 +1519,7 @@
             background-color: #BFA99A;
         }
     }    
+    
 }
 
 

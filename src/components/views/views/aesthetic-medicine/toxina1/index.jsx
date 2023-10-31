@@ -49,12 +49,6 @@ const PuntosToxina1 = () => {
                     </div>:""
                 }
 
-
-
-
-
-
-
                 {
                     point==3?
                     <div>

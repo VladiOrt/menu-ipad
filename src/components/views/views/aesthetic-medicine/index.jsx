@@ -46,7 +46,7 @@ const Revitalizadores0 = require('../../../utils/img/aesthetic/fillers/Revitaliz
 const Bioestimuladores0 = require('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon0.png')
 
 
-
+const imageCofepris = require('../../../../assets/images/aestethic/Cofepris.png')
 
 
 const Enzimas = require('../../../utils/img/aesthetic/enzimas/Icon0.png')
@@ -86,9 +86,18 @@ const Aesthetic = (props) =>{
 
 
     function handleVistaFillers (id){
-        setStateHialuronic(0)
-        setsubButton(0)
-        setVistaFillers(id)       
+
+        if(vistaFillers==id){
+            setStateHialuronic(0)
+            setsubButton(0)
+            setVistaFillers('') 
+        }else{
+            setStateHialuronic(0)
+            setsubButton(0)
+            setVistaFillers(id)      
+        }
+
+         
     }
 
     function handleVistaEnzimas (id){
@@ -104,6 +113,16 @@ const Aesthetic = (props) =>{
     function handleViewFillers(id){
         setVistaTechnologies(id)
     }
+
+    function handleViewToxina(vista){
+        if(vistaToxina==vista){
+            setVistaToxina('')
+        }else{
+            setVistaToxina(vista)
+        }            
+    }
+
+
 
     function changeView(valor){
         console.log("Valor" ,valor )
@@ -304,13 +323,21 @@ const Aesthetic = (props) =>{
                         </div>         
 
 
+
+
+
                         <div className="containerButtons">
-                            <div onClick={() => setVistaToxina('ToxinaUno') } >
+                            <div onClick={() => handleViewToxina('ToxinaUno') } className={vistaToxina=='ToxinaUno'?"Relleno":""} >
                                 Facial
                             </div>
-                            <div onClick={() => setVistaToxina('ToxinaDos') }>
+                            <div onClick={() => handleViewToxina('ToxinaDos') } className={vistaToxina=='ToxinaDos'?"Relleno":""} >
                                 Corporal
                             </div>
+                        </div>
+                        
+
+                        <div className="containerLogoCofepris">
+                            <img src={imageCofepris} />
                         </div>
 
                         
@@ -526,8 +553,11 @@ const Aesthetic = (props) =>{
                                 </div>    
                                 :""
                             }
-                                                     
-                        </div>         
+                        </div>
+                        <div className="containerLogoCofepris">
+                            <img src={imageCofepris} />
+                        </div>
+
                         <div className="containerButtons">
                             <div onClick={() => handleVistaFillers('FillersUno') } className={vistaFillers=='FillersUno'?"BotonActivo":""}  >
                                 Ácido Hialurónico
