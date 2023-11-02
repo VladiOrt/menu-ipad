@@ -943,9 +943,11 @@
             align-items: center;
             min-width: 20vw;
             min-height: 50px;
+            background-color: #FFF;
         }
         .active{
-            background-color: #E3E3E3;
+            background-color: #00B89E;
+            border: none;
         }
        
     }

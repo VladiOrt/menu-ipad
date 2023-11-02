@@ -15,10 +15,10 @@
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
-        background-size: 60px;
-        font-size: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        background-size: 50px;
+        font-size: 25px;
+        min-width: 30px;
+        min-height: 30px;
 
     }
    
@@ -79,8 +79,8 @@
         align-items: center;
        
        div{
-            min-width: 30px;
-            min-height: 30px;
+            min-width: 25px;
+            min-height: 25px;
             border: 1px solid #00B89E;
             border-radius: 15px;
             display: flex;
@@ -88,8 +88,8 @@
             align-items: center;
             div{
                 border-radius: 15px;              
-                min-width: 26px;
-                min-height: 26px;
+                min-width: 22px;
+                min-height: 22px;
                 border: 1px solid #00B89E;                
             }
        } 
@@ -103,42 +103,59 @@
         min-width: 450px;
         max-width: 450px;
         min-height: 80px;
-        margin-top: 70vh;
+        margin-top: 68vh;
         margin-left: 0vw;
         border-radius: 10px;
-        background-color: rgba(255,255,255,0.5);
-        div{
-            margin-top: 10px;
-            margin-left: 10px;
-            max-height: 100px;
+        background-color: rgba(255,255,255,0.8);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+        .containerText{
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            max-width: 400px;
-            label{
-                max-width: 120px;
-                color: #00B89E;
-            }
-            p{
-                max-width: 120px;
-                color: #6A6A6A;
-            }
+
+            flex-direction: row;
+            min-width: 430px;
+            max-width: 430px;
+            justify-content: space-around;
+            padding: 10px;
             div{
+                min-width: 90px;
+                max-width: 120px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 img{
-                    min-width: 120px;
                     max-width: 120px;
+                    min-width: 120px;
                 }
             }
-            
-        }
+            .titleDescription{
+                label{
+                    color: #00B89E;
+                    min-width: 100%;
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+            .IconTwo{
+                img{
+                    max-width: 180px;
+                    min-width: 180px;
+                }
+
+            }
+        }        
     }
 
 
     .circleClose{
         margin-left: 36.5vw;
-        margin-top: 66.5vh;
+        margin-top: 64.5vh;
         position: absolute;
         min-width: 40px;
         max-width: 40px;

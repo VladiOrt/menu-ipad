@@ -41,7 +41,7 @@ const Hialuronic1 = () => {
             <div className={"circle Five "+  (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
             <div className={"circle Six "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
             <div className={"circle Seven "+ (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
-            <div className={"circle Eight "+  (point==2?"Active":"")} onClick={() =>handlePoint()}> <div><div /></div></div>
+            <div className={"circle Eight "+  (point==2?"Active":"")} onClick={() =>handlePoint(2)}> <div><div /></div></div>
             <div className={"circle Nine "+  (point==4?"Active":"")} onClick={() =>handlePoint(4)}> <div><div /></div></div>
             <div className={"circle Ten "+  (point==5?"Active":"") } onClick={() =>handlePoint(5)}> <div><div /></div></div>
             <div className={"circle Eleven "+  (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
@@ -53,11 +53,15 @@ const Hialuronic1 = () => {
          
                 {
                     point==1?
-                    <div>
-                        <label>FINE LINES</label>
-                        <p>Arrugas finas y superficiales.</p>   
-                        <div>
-                            <img src={FineLines0} />
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>FINE LINES</label>
+                            <p>Arrugas finas y superficiales.</p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>
+                        <div className='IconTwo'>
                             <img src={FineLines1} />
                         </div>                  
                     </div>:""
@@ -66,11 +70,15 @@ const Hialuronic1 = () => {
 
                 {
                     point==2?
-                    <div>
-                        <label>VOLUME</label>
-                        <p>Restauración de contornos y volúmenes.</p>   
-                        <div>
-                            <img src={FineLines2} />
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>VOLUME</label>
+                            <p>Restauración de contornos y volúmenes.</p>   
+                        </div>                        
+                        <div  className='IconOne'>
+                            <img src={FineLines2} />                        
+                        </div>                        
+                        <div className='IconTwo'>
                             <img src={FineLines1} />
                         </div>                  
                     </div>:""
@@ -79,11 +87,15 @@ const Hialuronic1 = () => {
 
                 {
                     point==3?
-                    <div>
-                        <label>LIPS SOFT</label>
-                        <p>Contorno de labios y volumen suave.</p>   
-                        <div>
+                    <div className='containerText'>
+                         <div className='titleDescription'>
+                            <label>LIPS SOFT</label>
+                            <p>Contorno de labios y volumen suave.</p>   
+                        </div> 
+                        <div  className='IconOne'>
                             <img src={FineLines4} />
+                        </div>
+                        <div className='IconTwo'>                            
                             <img src={FineLines1} />
                         </div>                  
                     </div>
@@ -92,26 +104,34 @@ const Hialuronic1 = () => {
 
                 {   
                   point==4?
-                  <div>
-                      <label>UNIVERSAL</label>
-                      <p>Arrugas finas a profundas.</p>   
-                      <div>
-                          <img src={FineLines3} />
-                          <img src={FineLines1} />
-                      </div>                  
+                  <div className='containerText'>
+                       <div className='titleDescription'>
+                            <label>UNIVERSAL</label>
+                            <p>Arrugas finas a profundas.</p>  
+                        </div> 
+                        <div  className='IconOne'>
+                            <img src={FineLines3} />
+                        </div>
+                        <div className='IconTwo'>                            
+                            <img src={FineLines1} />
+                        </div>                                
                   </div>
                   :""
                 }
 
                 {
                     point== 5?
-                    <div>
-                        <label>LIPS</label>
-                        <p>Embellecimiento y volumen pronunciado.</p>   
-                        <div>
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>LIPS</label>
+                            <p>Embellecimiento y volumen pronunciado.</p>   
+                        </div> 
+                        <div  className='IconOne'>
                             <img src={FineLines5} />
+                        </div>
+                        <div className='IconTwo'>                            
                             <img src={FineLines1} />
-                        </div>                  
+                        </div>                                
                     </div>
                 :""
                 }

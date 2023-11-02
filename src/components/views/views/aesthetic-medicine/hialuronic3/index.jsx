@@ -34,8 +34,7 @@ const Hialuronic3 = () => {
 
     return(
         <div className="containerHialuronicTres">
-            <div className={"circle One "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}><div><div /></div></div>
-            <div className={"circle Two "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}><div><div /></div></div>
+            <div className={"circle One "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}><div><div /></div></div>            <div className={"circle Two "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}><div><div /></div></div>
             <div className={"circle Three "+  (point==3?"Active":"") } onClick={() =>handlePoint(3)} ><div><div /></div></div>
             <div className={"circle Four "+  (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
             <div className={"circle Five "+  (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
@@ -55,79 +54,89 @@ const Hialuronic3 = () => {
 
 
 
-            <div className={point!=0?"text":""}>
-         
+            <div className={point!=0?"text":""}>         
                 {
                     point==1?
-                    <div>
-                        <label>SOFT</label>
-                        <p>
-                            Rellena arrugas finas y mejora su apariencia.
-                            Zonas: patas de gallo (al rededor de los ojos), líneas de frente y líneas periorales.
-                        </p>   
-                        <div>
-                            <img src={FineLines2} />
-                        </div>                  
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>SOFT</label>
+                            <p>
+                                Rellena arrugas finas y mejora su apariencia.
+                                Zonas: patas de gallo (al rededor de los ojos), líneas de frente y líneas periorales.    
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>                          
                     </div>:""
                 }
 
 
                 {
                     point==2?
-                    <div>
-                        <label>VOLUME</label>
-                        <p>
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>VOLUME</label>
+                            <p>
                             Restaura el volumen de la piel y le da vitalidad al rostro.
                             Zonas: área de mejillas, voluminización: mandíbula y mentón.
-                        </p>   
-                        <div>
-                            <img src={FineLines2} />
-                        </div>                  
-                    </div>:""
-                }
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines2} />                        
+                        </div>                          
+
+               
+                    </div>:""                }
 
 
                 {
                     point==3?
-                    <div>
-                        <label>BALANCE</label>
-                        <p>
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>BALANCE</label>
+                            <p>
                             Rellena arrugas medias y promueve una mirada más joven.
                             Zonas: contorno de labios, arrugas moderadas y ojeras.
-                        </p>   
-                        <div>
-                            <img src={FineLines2} />
-                        </div>                  
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines2} />                        
+                        </div>                                           
                     </div>
                     :""
                 }
 
                 {   
                   point==4?
-                  <div>
-                      <label>INTENSE</label>
-                      <p>
+                  <div className='containerText'>
+                    <div className='titleDescription'>
+                        <label>INTENSE</label>
+                        <p>
                             Es utilizado para arrugas más profundas.
                             Zonas: estructuración de la región cigomática, líneas de marioneta, pliegues nasolabial, mentón y labios.  
-                        </p>   
-                      <div>
-                          <img src={FineLines2} />
-                      </div>                  
+                        </p>       
+                    </div>                        
+                    <div className='IconOne'>
+                        <img src={FineLines2} />                        
+                    </div>                                 
                   </div>
                   :""
                 }
 
                 {
                     point== 5?
-                    <div>
-                        <label>REVIVE</label>
-                        <p>
-                            Promueve hidratación a la piel y redefine la textura de la piel.
-                            Zonas: Rostro, escote, cuello y manos.
-                        </p>   
-                        <div>
-                            <img src={FineLines2} />
-                        </div>                  
+                    <div className='containerText'>
+                            <div className='titleDescription'>
+                                <label>REVIVE</label>
+                                <p>
+                                Promueve hidratación a la piel y redefine la textura de la piel.
+                               Zonas: Rostro, escote, cuello y manos.
+                                </p>       
+                            </div>                        
+                            <div className='IconOne'>
+                                <img src={FineLines2} />                
+                            </div> 
                     </div>
                 :""
                 }
@@ -137,6 +146,7 @@ const Hialuronic3 = () => {
             <div className= {point!=0?"circleClose":""} onClick={()=>setPoint(0)}>
                 
             </div>
+ 
         </div>
     )
 }

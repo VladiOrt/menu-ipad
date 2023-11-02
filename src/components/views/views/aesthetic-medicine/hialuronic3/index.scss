@@ -15,73 +15,73 @@
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
-        background-size: 60px;
-        font-size: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        background-size: 50px;
+        font-size: 25px;
+        min-width: 30px;
+        min-height: 30px;
 
     }
    
     .One{
         margin-top: 25vh;
-        margin-left: 18.5vw;
+        margin-left: 19vw;
     }
     .Two{
         margin-top: 28vh;
-        margin-left: 10vw;
+        margin-left: 8vw;
     }
     .Three{
         margin-top: 33vh;
-        margin-left: 18.5vw;
+        margin-left: 19vw;
     }
     .Four{
         margin-top: 36vh;
-        margin-left: 29vw;
+        margin-left: 29.5vw;
     }
     .Five{
         margin-top: 35vh;
-        margin-left: 8vw;
+        margin-left: 8.5vw;
     }
     .Six{
-        margin-top: 38.5vh;
-        margin-left: 24vw;
+        margin-top: 40vh;
+        margin-left: 24.5vw;
     }
     .Seven{
         margin-top: 41vh;
         margin-left: 8vw;
     }
     .Eight{
-        margin-top: 47vh;
+        margin-top: 48vh;
         margin-left: 13vw;
     }    
     .Nine{
-        margin-top: 49vh;
-        margin-left: 23vw;
+        margin-top: 50vh;
+        margin-left: 22.5vw;
     }    
     .Ten{
-        margin-top: 52vh;
-        margin-left: 27vw;
+        margin-top: 53vh;
+        margin-left: 27.5vw;
     }
     .Eleven{
-        margin-top:  54vh;
-        margin-left: 9vw;
+        margin-top:  56vh;
+        margin-left: 10vw;
     }
     .Twelve{
-        margin-top:  55vh;
-        margin-left: 16vw;
+        margin-top:  56vh;
+        margin-left: 16.5vw;
     }
 
     .Therteen{
-        margin-top:  57vh;
-        margin-left: 20vw;
+        margin-top:  57.5vh;
+        margin-left: 21vw;
     }
     .Fourteen{
-        margin-top:  65vh;
-        margin-left: 18vw;
+        margin-top:  66vh;
+        margin-left: 19vw;
     }
     .Fiveteen{
         margin-top:  63vh;
-        margin-left: 22vw;
+        margin-left: 23.5vw;
     }
     .Active{
         
@@ -91,8 +91,8 @@
         align-items: center;
        
        div{
-            min-width: 30px;
-            min-height: 30px;
+            min-width: 25px;
+            min-height: 25px;
             border: 1px solid #00B89E;
             border-radius: 15px;
             display: flex;
@@ -100,8 +100,8 @@
             align-items: center;
             div{
                 border-radius: 15px;              
-                min-width: 26px;
-                min-height: 26px;
+                min-width: 22px;
+                min-height: 22px;
                 border: 1px solid #00B89E;                
             }
        } 
@@ -114,51 +114,61 @@
         position: absolute;
         min-width: 500px;
         max-width: 500px;
-        min-height: 100px;
+        min-height: 50px;
         margin-top: 70vh;
         margin-left: 0vw;
         border-radius: 10px;
-        background-color: rgba(255,255,255,0.5);
-        div{
-            margin-top: 10px;
-            margin-left: 10px;
-            max-height: 100px;
+        padding-bottom: 0px;
+        background-color: rgba(255,255,255,0.8);
+      
+        
+
+
+        .containerText{
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            max-width: 400px;
-            label{
-                min-width: 350px;
-                max-width: 350px;
-                color: #00B89E;            
-            }
-            p{
-                max-width: 350px;
-                color: #6A6A6A;
-            }
-            div{
-                display: flex;
-                flex-direction: row;
-                img{
-                    min-width: 120px;
-                    max-width: 120px;
+            flex-direction: row;
+            min-width: 480px;
+            max-width: 480px;
+            justify-content: space-around;
+            padding: 10px;
+           
+            .titleDescription{
+                min-width: 300px;
+                max-width: 300px;
+                label{
+                    color: #00B89E;
+                    min-width: 100%;
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.9rem;
                 }
             }
-            
-        }
+            .IconOne{
+                min-width: 130px;
+                max-width: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    max-width: 120px;
+                    min-width: 120px;
+                }
+
+            }
+        }        
     }
 
 
     .circleClose{
-        z-index: 5;
-        margin-left: 36.5vw;
-        margin-top: 66.5vh;
+        margin-left: 40.5vw;
+        margin-top: 67.2vh;
         position: absolute;
         min-width: 40px;
-        max-width: 40px;        
+        max-width: 40px;
+        min-height: 40px;        
         background-image: url('../../../../utils/img/aesthetic/toxina/circleClose.png');
-        background-size: 50px;
-
+        background-size: 40px;
     }
 
 }

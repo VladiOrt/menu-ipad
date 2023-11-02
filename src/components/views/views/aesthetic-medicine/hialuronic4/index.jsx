@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 
-const FineLines0 = require('../../../../utils/img/aesthetic/fillers/AcidoHialuronico/ImgDescript0.png')
+const FineLines0 = require('../../../../../assets/images/aestethic/perfectha.png')
 
 const FineLines1 = require('../../../../utils/img/aesthetic/fillers/AcidoHialuronico/ImgDescript1.png')
 const FineLines2 = require('../../../../utils/img/aesthetic/fillers/AcidoHialuronico/ImgDescript2.png')
@@ -36,14 +36,14 @@ const Hialuronic4 = () => {
         <div className="containerHialuronicCuatro">
             <div className={"circle One "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}><div><div /></div></div>
             <div className={"circle Two "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}><div><div /></div></div>
-            <div className={"circle Three "+  (point==1?"Active":"") } onClick={() =>handlePoint(1)} ><div><div /></div></div>
-            <div className={"circle Four "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}> <div><div /></div></div>
-            <div className={"circle Five "+  (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
-            <div className={"circle Six "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
-            <div className={"circle Seven "+ (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
-            <div className={"circle Eight "+  (point==2?"Active":"")} onClick={() =>handlePoint()}> <div><div /></div></div>
+            <div className={"circle Three "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)} ><div><div /></div></div>
+            <div className={"circle Four "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
+            <div className={"circle Five "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
+            <div className={"circle Six "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}> <div><div /></div></div>
+            <div className={"circle Seven "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
+            <div className={"circle Eight "+  (point==4?"Active":"")} onClick={() =>handlePoint(4)}> <div><div /></div></div>
             <div className={"circle Nine "+  (point==4?"Active":"")} onClick={() =>handlePoint(4)}> <div><div /></div></div>
-            <div className={"circle Ten "+  (point==5?"Active":"") } onClick={() =>handlePoint(5)}> <div><div /></div></div>
+            <div className={"circle Ten "+  (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
             <div className={"circle Eleven "+  (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
             <div className={"circle Twelve "+  (point==3?"Active":"") } onClick={() =>handlePoint(3)}> <div><div /></div></div>
 
@@ -55,26 +55,37 @@ const Hialuronic4 = () => {
          
                 {
                     point==1?
-                    <div>
-                        <label>FINE LINES</label>
-                        <p>Arrugas finas y superficiales.</p>   
-                        <div>
-                            <img src={FineLines0} />
-                            <img src={FineLines1} />
-                        </div>                  
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>DERM</label>
+                            <p>
+                                Rellena líneas faciales medias y de presiones de la piel.
+                                Zonas: Línea de la glabela, contorno de labios, comisura oral.  
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>                                    
                     </div>:""
                 }
 
 
                 {
                     point==2?
-                    <div>
-                        <label>VOLUME</label>
-                        <p>Restauración de contornos y volúmenes.</p>   
-                        <div>
-                            <img src={FineLines2} />
-                            <img src={FineLines1} />
-                        </div>                  
+
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>FINELINES</label>
+                            <p>
+                                Rellena líneas faciales superficiales.
+                                Zonas: Línea periorbital, arrugas periorales, reducción de ojeras.
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>   
+
+                                
                     </div>:""
                 }
 
