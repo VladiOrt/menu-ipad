@@ -11,7 +11,9 @@
 
     flex-wrap: nowrap;
 
-    .circle{
+
+
+    .circle{        
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
@@ -81,7 +83,7 @@
         margin-top: 70vh;
         margin-left: 25vw;
         border-radius: 10px;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.8);
         div{
             margin-top: 10px;
             margin-left: 10px;
@@ -93,10 +95,12 @@
             label{
                 max-width: 160px;
                 color: #00B89E;
+                font-size: 1rem;
             }
             p{
                 max-width: 160px;
                 color: #6A6A6A;
+                font-size: 0.9rem;
             }
             div{
                 display: flex;

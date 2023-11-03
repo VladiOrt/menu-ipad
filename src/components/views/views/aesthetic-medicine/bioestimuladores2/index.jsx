@@ -72,7 +72,7 @@ const Bioestimuladores2 = () => {
                 {   
                     point==2?
                     <div>
-                        <label>Área temporadl</label>
+                        <label>Área temporal</label>
                         <p></p>   
                         <div>
                             <img src={IconText1} />

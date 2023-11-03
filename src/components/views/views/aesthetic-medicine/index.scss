@@ -486,7 +486,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    
     background-image: url('../../../utils/img/aesthetic/fillers/Back0.png');
+    
     background-position: right;
     background-size: 52vw;
     background-repeat: no-repeat;
@@ -785,6 +787,25 @@
                         background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/Icon1.png');
                         background-size: 100px;
                     }
+                    .buttonOneRevitalizadoresZonas{
+                        margin-left: 70vw;
+                        position: absolute;
+                        min-width: 120px;
+                        max-width: 120px;
+                        min-height: 40px;
+                        margin-bottom: 20vh;
+                        border-radius: 5px;
+                        border-color: transparent;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #6A6A6A;
+                        background-color: rgba(#FFF, 0.8);
+                        z-index: 10;
+                    }
+                    .buttonOneRevitalizadoresZonasOculto{
+                        display:none;
+                        background-color: red;
+                    }
                     .buttonOneActiveRevitalizadores{
                         background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/Iconx.png');
                     }
@@ -821,14 +842,14 @@
                     .buttonFive{
                         border: none;
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1.png');
-                        background-size: 40px;
+                        background-size: 35px;
                         background-position: center;
                         background-repeat: no-repeat;
                     }
                     .buttonFiveActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon1-2.png');
                         background-size: cover;
-                        background-size: 40px;
+                        background-size: 35px;
                         background-repeat: no-repeat;
                         border: none;
                     }
@@ -836,14 +857,16 @@
                     .buttonSix{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2.png');
                         background-size: cover;
-                        background-size: 40px;
+                        background-size: 32px;
                         background-repeat: no-repeat;
+                        background-position: center;
                         border: none;
                     }
                     .buttonSixActive{
                         background-image: url('../../../utils/img/aesthetic/fillers/Bioestimuladores/Icon2-2.png');
                         background-size: cover;
-                        background-size: 40px;
+                        background-position: center;
+                        background-size: 32px;
                         background-repeat: no-repeat;
                         border: none;
                     }
@@ -918,16 +941,45 @@
         background-image: url('../../../utils/img/aesthetic/fillers/Back1.png');
         background-size: 50vw;        
     }
-    .backgroundImageOneRevitalizadores{
+    .backgroundImageOneRevitalizadores {
+        
         background-color: #FFF;
         position: absolute;
         margin-top: 0vh;
         margin-left: 35vw;
         min-width: 50vw;
+        min-height: 86vh;
+        margin-top: 0vh;
+        background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/background.png');
+        background-size: 50vw;       
+        
+        background-image: url('../../../utils/img/aesthetic/fillers/Back0.png');
+        background-repeat: no-repeat;
+        
+    }
+    .backgroundImageOneRevitalizadoresActive{
+        
+        background-color: #FFF;
+        position: absolute;
+        margin-top: 0vh;
+        margin-left: 35vw;
+        min-width: 52vw;
         min-height: 85vh;
         background-image: url('../../../utils/img/aesthetic/fillers/Revitalizadores/background.png');
         background-size: 50vw;        
+      
+
+
+
     }
+
+
+
+
+
+
+
+
     .ButtonsTop{
         z-index: 5;
         position: absolute;
@@ -1016,7 +1068,7 @@
     align-items: flex-start;
     background-image: url('../../../utils/img/aesthetic/enzimas/background.png');
     background-position: right;
-    background-size: 52vw;
+    background-size: 50vw;
     background-repeat: no-repeat;
     background-position-y: 0vh;
     background-position-x: 35vw;
@@ -1253,7 +1305,16 @@
         
     }    
 
-
+    .containerLogoCofepris{
+        max-width: 20vw;
+        position: absolute;
+        margin-top: 90vh;
+        margin-left: 35vw;
+        img{
+            max-width: 20vw;
+        }
+    }
+    
     .containerButtonsPoints{
         position: absolute;
         display: flex;
@@ -1272,6 +1333,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #E3E3E3;
         }
         .active{
             min-width: 16.8vw;
@@ -1279,7 +1341,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #E3E3E3;
+            background-color: #fff;
         }
     }
 
@@ -1430,7 +1492,7 @@
         }
     }  
     .containerParagraph{
-        max-width: 30vw;
+        max-width: 27vw;
         margin-top: 3vh;
         margin-left: 5vw;
         color: #3C3C3C;
@@ -1441,7 +1503,7 @@
         margin-top: 0vh;
         padding-left: 5vw;
         padding-top: 3vh;
-        max-width: 30vw;        
+        max-width: 27vw;        
         list-style: none;
         //background-image: url('../../../utils/img/aesthetic/toxina/FondoLinea.png');
         background-repeat: no-repeat;
@@ -1521,6 +1583,15 @@
             background-color: #BFA99A;
         }
     }    
+    .containerLogoCofepris{
+        max-width: 20vw;
+        position: absolute;
+        margin-top: 90vh;
+        margin-left: 35vw;
+        img{
+            max-width: 20vw;
+        }
+    }
     
 }
 

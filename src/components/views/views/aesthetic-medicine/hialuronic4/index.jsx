@@ -1,5 +1,5 @@
-import './index.scss'
 import { useState } from 'react'
+import './index.scss'
 
 
 
@@ -33,12 +33,18 @@ const Hialuronic4 = () => {
    
 
     return(
-        <div className="containerHialuronicCuatro">
+        <div className="containerHialuronicCuatroNew">
+                    
             <div className={"circle One "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}><div><div /></div></div>
+              
             <div className={"circle Two "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}><div><div /></div></div>
+ 
             <div className={"circle Three "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)} ><div><div /></div></div>
+       
             <div className={"circle Four "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
+
             <div className={"circle Five "+  (point==4?"Active":"") } onClick={() =>handlePoint(4)}> <div><div /></div></div>
+             
             <div className={"circle Six "+  (point==2?"Active":"") } onClick={() =>handlePoint(2)}> <div><div /></div></div>
             <div className={"circle Seven "+ (point==1?"Active":"") } onClick={() =>handlePoint(1)}> <div><div /></div></div>
             <div className={"circle Eight "+  (point==4?"Active":"")} onClick={() =>handlePoint(4)}> <div><div /></div></div>
@@ -92,39 +98,55 @@ const Hialuronic4 = () => {
 
                 {
                     point==3?
-                    <div>
-                        <label>LIPS SOFT</label>
-                        <p>Contorno de labios y volumen suave.</p>   
-                        <div>
-                            <img src={FineLines4} />
-                            <img src={FineLines1} />
-                        </div>                  
+
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>SUBSKIN</label>
+                            <p>
+                            Aumento de volumen.
+                                Zonas: redefinición de contorno facial, proyección malar, proyección de la barbilla, rejuvenecimiento de manos.    
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>   
+
                     </div>
                     :""
                 }
 
                 {   
                   point==4?
-                  <div>
-                      <label>UNIVERSAL</label>
-                      <p>Arrugas finas a profundas.</p>   
-                      <div>
-                          <img src={FineLines3} />
-                          <img src={FineLines1} />
-                      </div>                  
+                  <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>DEEP</label>
+                            <p>
+                                Rellena líneas faciales profundas y depresiones de la piel.
+                                Zonas: aumento de volumen en labios, redefinición nariz, líneas de marioneta, comisura oral, aumento moderado de mentón y mejillas.
+                            </p>       
+                        </div>                        
+                        <div className='IconOne'>
+                            <img src={FineLines0} />                        
+                        </div>                  
+
+                  
                   </div>
                   :""
                 }
 
                 {
                     point== 5?
-                    <div>
-                        <label>LIPS</label>
-                        <p>Embellecimiento y volumen pronunciado.</p>   
-                        <div>
-                            <img src={FineLines5} />
-                            <img src={FineLines1} />
-                        </div>                  
+                    <div className='containerText'>
+                        <div className='titleDescription'>
+                            <label>Subskin</label>
+                            <p>
+                                Aumento de volumen.
+                                Zonas: redefinición de contorno facial, proyección malar, proyección de la barbilla, rejuvenecimiento de manos.
+                            </p>       
+                        </div>
+                        <div className='IconOne'>
+                            <img src={FineLines0} />
+                        </div>
                     </div>
                 :""
                 }

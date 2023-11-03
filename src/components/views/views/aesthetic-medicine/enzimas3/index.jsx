@@ -56,65 +56,77 @@ const Enzimas3 = () => {
             <div className={point!=0?"text":""}>         
                 {
                     point==1?
-                    <div>
-                        <label>Slim+, Smooth+ y Drain+</label>
-                        <p>Bolsas palpebrales.</p>   
-                        <div>      
+                    <div className='containerText'>
+                        <div className='description'>
+                            <label>Slim+, Smooth+ y Drain+</label>
+                            <p>Bolsas palpebrales.</p>   
+                        </div>                        
+                        <div className='imgOne'>      
                             <img src={ThreeCircle} />                     
                         </div>                  
                     </div>:""
                 }
                 {
                     point==2?
-                    <div>
-                        <label>Slim+, Smooth+ y Drain+</label>
-                        <p>Joel y doble mentón.</p>   
-                        <div>          
-                            <img src={ThreeCircle} />      
-                        </div>                  
+                    <div className='containerText'>
+                        <div className='description'>
+                            <label>Slim+, Smooth+ y Drain+</label>
+                            <p>Joel y doble mentón.</p>   
+                        </div>                        
+                        <div className='imgOne'>      
+                            <img src={ThreeCircle} />                     
+                        </div>   
                     </div>:""
                 }
                 {
                     point==3?
-                    <div>
-                        <label>Slim+, Smooth+ y Drain+</label>
-                        <p>Acumulaciones adiposas en brazos, espalda, abdomen, cadera y piernas.</p>   
-                        <div>                    
-                            <img src={ThreeCircle} />        
-                        </div>                  
+                    <div className='containerText'>
+                        <div className='description'>
+                            <label>Slim+, Smooth+ y Drain+</label>
+                            <p>Acumulaciones adiposas en brazos, espalda, abdomen, cadera y piernas.</p>   
+                        </div>                        
+                        <div className='imgOne'>      
+                            <img src={ThreeCircle} />                     
+                        </div>   
                     </div>
                     :""
                 }
                 {   
                   point==4?
-                  <div>
-                      <label>Smooth+</label>
-                      <p>Flacidez y estrías.</p>   
-                      <div>                     
-                      <img src={OneCircle} />    
-                      </div>                  
+                  <div className='containerText'>
+                    <div className='description'>
+                        <label>Smooth+</label>
+                        <p>Flacidez y estrías.</p>   
+                    </div>                        
+                    <div className='imgOne'>      
+                        <img src={OneCircle} className="imgTwo" />                     
+                    </div>   
                   </div>
                   :""
                 }       
                   {   
                   point==6?
-                  <div>
-                      <label>Slim+, Smooth+ y Drain+</label>
-                      <p>Celulitis, fibrosis y cicatrices.</p>   
-                      <div>  
-                      <img src={ThreeCircle} />                            
-                      </div>                  
+                    <div className='containerText'>
+                        <div className='description'>
+                            <label>Slim+, Smooth+ y Drain+</label>
+                            <p>Celulitis, fibrosis y cicatrices.</p>   
+                        </div>                        
+                        <div className='imgOne'>      
+                            <img src={ThreeCircle} />                     
+                        </div>   
                   </div>
                   :""
                 } 
                   {   
                   point==5?
-                  <div>
-                      <label>Smooth+ y Drain+</label>
-                      <p>Retención de líquidos.</p>   
-                      <div>          
-                      <img src={TwoCircle} />                
-                      </div>                  
+                  <div className='containerText'>
+                    <div className='description'>
+                        <label>Slim+, Smooth+ y Drain+</label>
+                        <p>Retención de líquidos.</p>   
+                    </div>                        
+                    <div className='imgOne'>      
+                        <img src={TwoCircle} className='imgThree' />                     
+                    </div>                   
                   </div>
                   :""
                 } 

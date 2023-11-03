@@ -15,10 +15,10 @@
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
-        background-size: 60px;
-        font-size: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        background-size: 50px;
+        font-size: 25px;
+        min-width: 30px;
+        min-height: 30px;
 
     }
    
@@ -68,8 +68,8 @@
         align-items: center;
        
        div{
-            min-width: 30px;
-            min-height: 30px;
+            min-width: 25px;
+            min-height: 25px;
             border: 1px solid #00B89E;
             border-radius: 15px;
             display: flex;
@@ -77,8 +77,8 @@
             align-items: center;
             div{
                 border-radius: 15px;              
-                min-width: 26px;
-                min-height: 26px;
+                min-width: 22px;
+                min-height: 22px;
                 border: 1px solid #00B89E;                
             }
        } 
@@ -127,15 +127,15 @@
 
 
     .circleClose{
-        margin-left: 36.5vw;
-        margin-top: 66.5vh;
+        margin-left: 37.2vw;
+        margin-top: 67.2vh;
         position: absolute;
         min-width: 40px;
         max-width: 40px;
         min-height: 40px;
         
         background-image: url('../../../../utils/img/aesthetic/toxina/circleClose.png');
-        background-size: 50px;
+        background-size: 40px;
 
     }
 

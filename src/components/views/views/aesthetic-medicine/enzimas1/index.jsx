@@ -45,7 +45,7 @@ const Enzimas1 = () => {
                 {
                     point==1?
                     <div>
-                        <label>OJERAS</label>
+                        <label>Ojeras</label>
                         <p></p>   
                         <div>                           
                         </div>                  

@@ -15,44 +15,45 @@
         position: absolute;
         background-image: url('../../../../utils/img/aesthetic/toxina/CirculoFondo.png');
         background-position: center;
-        background-size: 60px;
-        font-size: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        background-size: 50px;
+        font-size: 25px;
+        min-width: 30px;
+        min-height: 30px;
 
     }
    
     .One{
         margin-top: 25vh;
-        margin-left: 18.5vw;
+        margin-left: 19vw;
     }
     .Two{
-        margin-top: 35vh;
-        margin-left: 29vw;
+        margin-top: 36vh;
+        margin-left: 30vw;
     }
     .Three{
         margin-top: 42vh;
         margin-left: 10vw;
     }
     .Four{
-        margin-top: 47vh;
+        margin-top: 48vh;
         margin-left: 13vw;
     }
     .Five{
-        margin-top: 51vh;
-        margin-left: 25vw;
+
+        margin-top: 52vh;
+        margin-left: 24.5vw;
     }
     .Six{
-        margin-top: 55vh;
-        margin-left: 12vw;
+        margin-top: 55.5vh;
+        margin-left: 12.5vw;
     }
     .Seven{
-        margin-top: 59vh;
-        margin-left: 25vw;
+        margin-top: 60vh;
+        margin-left: 26vw;
     }
     .Eight{
-        margin-top: 65vh;
-        margin-left: 18vw;
+        margin-top: 66vh;
+        margin-left: 19vw;
     }    
     .Nine{
         margin-top: 70vh;
@@ -81,8 +82,8 @@
         align-items: center;
        
        div{
-            min-width: 30px;
-            min-height: 30px;
+            min-width: 25px;
+            min-height: 25px;
             border: 1px solid #00B89E;
             border-radius: 15px;
             display: flex;
@@ -90,8 +91,8 @@
             align-items: center;
             div{
                 border-radius: 15px;              
-                min-width: 26px;
-                min-height: 26px;
+                min-width: 22px;
+                min-height: 22px;
                 border: 1px solid #00B89E;                
             }
        } 
@@ -139,15 +140,15 @@
 
 
     .circleClose{
-        margin-left: 36.5vw;
-        margin-top: 66.5vh;
+        margin-left: 38vw;
+        margin-top: 67.5vh;
         position: absolute;
         min-width: 40px;
         max-width: 40px;
         min-height: 40px;
         
         background-image: url('../../../../utils/img/aesthetic/toxina/circleClose.png');
-        background-size: 50px;
+        background-size: 40px;
 
     }
 

@@ -87,6 +87,9 @@ const Aesthetic = (props) =>{
 
     function handleVistaFillers (id){
 
+        console.log("-----> " , id )
+        //if(id=='FillersDos') setStateHialuronic(5)
+
         if(vistaFillers==id){
             setStateHialuronic(0)
             setsubButton(0)
@@ -95,6 +98,8 @@ const Aesthetic = (props) =>{
             setStateHialuronic(0)
             setsubButton(0)
             setVistaFillers(id)      
+            if(id=='FillersDos')setStateHialuronic(5)
+
         }
 
          
@@ -159,6 +164,10 @@ const Aesthetic = (props) =>{
         if(id==5){
             setsubButton(5)
             setStateHialuronic(5)
+        }
+        if(id==51){
+            setsubButton(5)
+            setStateHialuronic(51)
         }
         if(id==6){
             setsubButton(6)
@@ -621,6 +630,7 @@ const Aesthetic = (props) =>{
                                         <div className="containerContentButtonsOneRevitalizadores">
                                             <div className="contentSubButtonsRevitalizadores">
                                                 <div className={subButton==5?"buttonOneRevitalizadores":"buttonOneRevitalizadores"} onClick={()=>changeViewHyaluronic(5)}></div>
+                                                <div className={stateHialuronic==5?"buttonOneRevitalizadoresZonas":"buttonOneRevitalizadoresZonasOculto"} onClick={()=>changeViewHyaluronic(51)}>Zonas</div>
                                             </div>
                                         </div>
                                         :
@@ -676,7 +686,7 @@ const Aesthetic = (props) =>{
                         }    
                          {
                             vistaFillers=='FillersDos'?
-                            <div className="backgroundImageOneRevitalizadores">                                
+                            <div className={stateHialuronic==5?"backgroundImageOneRevitalizadores":"backgroundImageOneRevitalizadoresActive"}>
                             </div>:""
                         }     
                         {
@@ -711,13 +721,11 @@ const Aesthetic = (props) =>{
                             </div>:""
                         }
                         {
-                            stateHialuronic==5?
+                            stateHialuronic==51?
                             <div className="containerPoints">
                                 <Revitalizadores1 />
                             </div>:""
                         }
-
-
                         {
                             stateHialuronic==6?
                             <div className="containerPoints">
@@ -751,30 +759,119 @@ const Aesthetic = (props) =>{
                             <img src={ArrowRight} onClick={()=> changeView('Forward')}/>
                         </div>
                         <div className="containerIcons">
-
-
                         <div className="containerTitle">
                                 <div className="title">
                                     Enzimas
                                 </div>
-                                <div className="subtitle">
-                                
+                                <div className="subtitle">                                
                                 </div>
-                            </div>    
-
-                           
+                            </div>                               
                         </div>
                         <div className="containerScores">
                             <div className="Score">                        
                                 <div>
-                                    <label className='price'>1er generación Desde $<p>5,000</p></label>    
+                                    <label className='price'>1er generación: Desde $<p>5,000</p></label>    
                                 </div>
                                 <div>
-                                    <label className='price'>2da generación Desde $<p>10,000</p></label>                                                                      
+                                    <label className='price'>2da generación: Desde $<p>10,000</p></label>                                                                      
                                 </div>
                             </div>                           
                         </div>
-                        <div className="containerParagraph">
+                       
+
+                        <div className="containerDescriptions">
+                            <ul className="ul">
+                                <li><div /><p>Resultados visibles a partir de un mes de la primera sesión</p></li>
+                                <li><div /><p>Se recomiendan mínimo 3 sesiones para un resultado garantizado </p></li>
+                                <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                                
+                            </ul>
+                        </div>         
+
+
+
+                        <div className="containerButtonsEnzimas">
+                            <div onClick={() => handleVistaEnzimas('EnzimasUno') }>
+                            { vistaEnzimas=='EnzimasUno'? <div className='EnzimasLogo1Activo' />:<div className='EnzimasLogo1' /> }
+                            <label>SLIM+</label>
+                            </div>
+                            <div onClick={() => handleVistaEnzimas('EnzimasDos') }>
+                            { vistaEnzimas=='EnzimasDos'? <div className='EnzimasLogo2Activo' />:<div className='EnzimasLogo2' /> }
+                            <label>SMOOTH+</label>                            
+                            </div>
+                            <div onClick={() => handleVistaEnzimas('EnzimasTres') }>
+                            { vistaEnzimas=='EnzimasTres'? <div className='EnzimasLogo3Activo' />:<div className='EnzimasLogo3' /> }
+                            <label>DRAIN+</label>                            
+                            </div>
+                        </div>
+                        <div className="containerLogoCofepris">
+                            <img src={imageCofepris} />
+                        </div>   
+                        
+                            
+                        {
+                            vistaEnzimas=="EnzimasUno"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }
+                        {
+                            vistaEnzimas=="EnzimasDos"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }                                
+                        {
+                            vistaEnzimas=="EnzimasTres"?
+                            <div className="containerButtonsPoints" >
+                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
+                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
+                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
+                            </div>:""
+                        }                                
+                        {
+                             stateEnzimas==1?
+                            <div className="backgroundImageOne">                                
+                            </div>:""
+                        }     
+                          {
+                             stateEnzimas==2?
+                            <div className="backgroundImageTwo">                                
+                            </div>:""
+                        }     
+                          {
+                             stateEnzimas==3?
+                            <div className="backgroundImageThree">                                
+                            </div>:""
+                        }     
+                            {
+                                
+                                stateEnzimas==1?
+                                <div className="containerPoints">
+                                    <ENZIMAS1 />
+                                </div>:""                                
+                            } 
+                             {
+                                
+                                stateEnzimas==2?
+                                <div className="containerPoints">
+                                    <ENZIMAS2 />
+                                </div>:""                                
+                            }     
+                             {
+                                
+                                stateEnzimas==3?
+                                <div className="containerPoints">
+                                    <ENZIMAS3 />
+                                </div>:""                                
+                            }                                                  
+                          
+
+
+                          <div className="containerParagraph">
                             {
                                 vistaEnzimas=='EnzimasUno'?
                                     <p>
@@ -801,109 +898,9 @@ const Aesthetic = (props) =>{
                                     ""
                             }
                         </div>
-
-                        <div className="containerDescriptions">
-                            <ul className="ul">
-                                <li><div /><p>Resultados visibles a partir de un mes de la primera sesión</p></li>
-                                <li><div /><p>Se recomiendan mínimo 3 sesiones para un resultado garantizado </p></li>
-                                <li><div /><p>Revisión a los 15 días post tratamiento</p></li>                                
-                            </ul>
-                        </div>         
-
-
-
-                        <div className="containerButtonsEnzimas">
-                            <div onClick={() => handleVistaEnzimas('EnzimasUno') }>
-                            { vistaEnzimas=='EnzimasUno'? <div className='EnzimasLogo1Activo' />:<div className='EnzimasLogo1' /> }
-                            <label>SLIM+</label>
-                            </div>
-                            <div onClick={() => handleVistaEnzimas('EnzimasDos') }>
-                            { vistaEnzimas=='EnzimasDos'? <div className='EnzimasLogo2Activo' />:<div className='EnzimasLogo2' /> }
-                            <label>SMOOTH+</label>                            
-                            </div>
-                            <div onClick={() => handleVistaEnzimas('EnzimasTres') }>
-                            { vistaEnzimas=='EnzimasTres'? <div className='EnzimasLogo3Activo' />:<div className='EnzimasLogo3' /> }
-                            <label>DRAIN+</label>                            
-                            </div>
-                        </div>
-
-                        
-                            
-                        {
-                            vistaEnzimas=="EnzimasUno"?
-                            <div className="containerButtonsPoints" >
-                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
-                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
-                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
-                            </div>:""
-                        }        
-                        
-                
-                        {
-                            vistaEnzimas=="EnzimasDos"?
-                            <div className="containerButtonsPoints" >
-                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
-                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
-                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
-                            </div>:""
-                        }        
-                        
-                        {
-                            vistaEnzimas=="EnzimasTres"?
-                            <div className="containerButtonsPoints" >
-                                <div className={stateEnzimas==1?"active":""} onClick={()=> setStateEnzimas(1)} >ROSTRO</div>
-                                <div className={stateEnzimas==2?"active":""} onClick={()=> setStateEnzimas(2)} >CORPORAL</div>
-                                <div className={stateEnzimas==3?"active":""} onClick={()=> setStateEnzimas(3)}>PROTOCOLOS</div>
-                            </div>:""
-                        }        
-                        
-
-                        {
-                             stateEnzimas==1?
-                            <div className="backgroundImageOne">                                
-                            </div>:""
-                        }     
-                          {
-                             stateEnzimas==2?
-                            <div className="backgroundImageTwo">                                
-                            </div>:""
-                        }     
-                          {
-                             stateEnzimas==3?
-                            <div className="backgroundImageThree">                                
-                            </div>:""
-                        }     
-
-
-
-                            {
-                                
-                                stateEnzimas==1?
-                                <div className="containerPoints">
-                                    <ENZIMAS1 />
-                                </div>:""                                
-                            } 
-                             {
-                                
-                                stateEnzimas==2?
-                                <div className="containerPoints">
-                                    <ENZIMAS2 />
-                                </div>:""                                
-                            }     
-                             {
-                                
-                                stateEnzimas==3?
-                                <div className="containerPoints">
-                                    <ENZIMAS3 />
-                                </div>:""                                
-                            }                                                  
-                          
                     </div>
                     :<></>
             }
-
-
-
 
 
 
@@ -956,7 +953,12 @@ const Aesthetic = (props) =>{
                             Dermapen
                             </div>
                       
-                        </div>                        
+                        </div>                     
+                        
+
+                        <div className="containerLogoCofepris">
+                            <img src={imageCofepris} />
+                        </div>   
                             {
                                 vistaToxina=='ToxinaUno'?
                                 <div className="containerPoints">
